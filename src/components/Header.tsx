@@ -30,11 +30,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-24">
           {/* Logo with Personality */}
           <div className="group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="font-playfair text-3xl md:text-4xl font-bold text-navy group-hover:text-gold transition-colors duration-300">
-              Hayley Zeoli
-            </div>
-            <div className="text-xs text-gold font-medium tracking-wider uppercase opacity-80">
+            <div className="font-playfair text-4xl md:text-5xl font-bold text-navy group-hover:text-gold transition-colors duration-300">
               HJZ Management
+            </div>
+            <div className="text-sm text-gold font-medium tracking-wider uppercase opacity-80">
+              New England Custom Homes
             </div>
           </div>
           

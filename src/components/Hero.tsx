@@ -29,19 +29,20 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto py-20">
         <div className="animate-fade-in-up">
-          <h1 className="font-playfair text-7xl md:text-8xl font-bold mb-4 tracking-tight leading-none">
-            Hayley Zeoli
+          <h1 className="font-playfair text-6xl md:text-7xl font-bold mb-6 tracking-tight leading-tight">
+            Where Dreams Take
+            <span className="block text-gold">Root in New England</span>
           </h1>
-          <div className="h-1 w-32 bg-gold mx-auto mb-6 rounded-full animate-pulse"></div>
+          <div className="h-1 w-32 bg-gold mx-auto mb-8 rounded-full animate-pulse"></div>
         </div>
         
-        <p className="text-2xl md:text-3xl mb-4 font-light animate-fade-in-up leading-relaxed" style={{animationDelay: '0.3s'}}>
-          <span className="text-gold font-medium">Artisan of Dreams.</span> Architect of Legacy.
+        <p className="text-2xl md:text-3xl mb-6 font-light animate-fade-in-up leading-relaxed" style={{animationDelay: '0.3s'}}>
+          <span className="text-gold font-medium">Crafting Legacy Homes.</span> Building Your Forever.
         </p>
         
         <p className="text-lg md:text-xl mb-12 font-light opacity-90 animate-fade-in-up max-w-3xl mx-auto" style={{animationDelay: '0.5s'}}>
-          Where New England tradition meets visionary design. Creating multi-million dollar sanctuaries 
-          that tell your story for generations.
+          From historic Boston neighborhoods to countryside estates, we create custom homes 
+          that honor New England tradition while embracing your family's unique vision.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in-up" style={{animationDelay: '0.7s'}}>
@@ -50,7 +51,7 @@ const Hero = () => {
             size="lg"
             className="group bg-gold hover:bg-gold-600 text-white font-semibold px-12 py-6 text-lg rounded-full shadow-2xl hover:shadow-gold/25 transition-all duration-500 hover:scale-105"
           >
-            <span className="group-hover:scale-110 transition-transform duration-300">Begin Your Legacy</span>
+            <span className="group-hover:scale-110 transition-transform duration-300">Start Building Your Dream</span>
           </Button>
           <Button 
             onClick={() => scrollToSection('about')}
@@ -58,7 +59,7 @@ const Hero = () => {
             size="lg"
             className="border-2 border-white/80 text-white hover:bg-white hover:text-navy px-12 py-6 text-lg rounded-full backdrop-blur-sm bg-white/10 transition-all duration-500 hover:scale-105"
           >
-            Meet Hayley
+            Discover Our Process
           </Button>
         </div>
       </div>
