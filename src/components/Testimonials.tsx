@@ -13,21 +13,21 @@ const Testimonials = () => {
       client: "Sarah & Michael Chen",
       project: "Historic Renovation, Beacon Hill",
       value: "$2.8M",
-      image: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     },
     {
       quote: "Working with a woman who understands luxury living made all the difference. Hayley didn't just build us a house—she created a sanctuary where we host dinner parties, raise our children, and find peace.",
       client: "Jennifer & Robert Williams", 
       project: "Custom Estate, Newton",
       value: "$4.2M",
-      image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     },
     {
       quote: "The craftsmanship is evident in every detail, but what sets Hayley apart is her intuition for how a family actually lives. She anticipated needs we didn't even know we had.",
       client: "David & Lisa Morrison",
       project: "Modern Build, Cambridge",
       value: "$3.6M", 
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
     }
   ];
 
@@ -47,17 +47,18 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-navy text-white relative overflow-hidden">
-      <div className="absolute top-16 right-0 w-80 h-80 bg-gold/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 left-0 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>
+    <section id="testimonials" className="py-20 bg-gradient-to-br from-slate-700 via-slate-600 to-blue-gray-700 text-white relative overflow-hidden">
+      <div className="absolute top-16 right-0 w-80 h-80 bg-amber-200/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 left-0 w-64 h-64 bg-emerald-100/10 rounded-full blur-2xl"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-sage-200/5 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16 section-animate">
           <h2 className="font-playfair text-5xl font-bold mb-6">
-            Stories of <span className="text-gold">Home</span>
+            Stories of <span className="text-amber-200">Home</span>
           </h2>
-          <div className="h-1 w-24 bg-gold mx-auto mb-6 rounded-full"></div>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <div className="h-1 w-24 bg-amber-200 mx-auto mb-6 rounded-full"></div>
+          <p className="text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
             Behind every custom home is a family with dreams. Here's what they're saying about their journey with Hayley.
           </p>
         </div>
@@ -73,21 +74,21 @@ const Testimonials = () => {
                       alt={testimonials[currentIndex].project}
                       className="w-24 h-24 rounded-full mx-auto shadow-xl object-cover"
                     />
-                    <div className="absolute -top-1 -right-1 bg-gold text-navy px-2 py-1 rounded-full text-xs font-bold">
+                    <div className="absolute -top-1 -right-1 bg-amber-500 text-white px-2 py-1 rounded-full text-xs font-bold">
                       {testimonials[currentIndex].value}
                     </div>
                   </div>
                   <div className="mt-4">
-                    <div className="font-semibold text-navy text-lg mb-1">
+                    <div className="font-semibold text-slate-700 text-lg mb-1">
                       {testimonials[currentIndex].client}
                     </div>
-                    <div className="text-gold text-sm font-medium">
+                    <div className="text-amber-600 text-sm font-medium">
                       {testimonials[currentIndex].project}
                     </div>
                   </div>
                 </div>
                 <div className="md:col-span-3">
-                  <div className="text-gold text-5xl font-playfair mb-3">"</div>
+                  <div className="text-amber-500 text-5xl font-playfair mb-3">"</div>
                   <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed font-light italic">
                     {testimonials[currentIndex].quote}
                   </blockquote>
@@ -101,7 +102,7 @@ const Testimonials = () => {
               variant="outline" 
               size="lg" 
               onClick={prevTestimonial}
-              className="rounded-full w-12 h-12 p-0 border-2 border-gold/30 text-gold hover:bg-gold hover:text-navy transition-all duration-300"
+              className="rounded-full w-12 h-12 p-0 border-2 border-amber-200/40 text-amber-200 hover:bg-amber-200 hover:text-slate-700 transition-all duration-300"
             >
               <ChevronLeft className="w-5 h-5" />
             </Button>
@@ -109,7 +110,7 @@ const Testimonials = () => {
               variant="outline" 
               size="lg" 
               onClick={nextTestimonial}
-              className="rounded-full w-12 h-12 p-0 border-2 border-gold/30 text-gold hover:bg-gold hover:text-navy transition-all duration-300"
+              className="rounded-full w-12 h-12 p-0 border-2 border-amber-200/40 text-amber-200 hover:bg-amber-200 hover:text-slate-700 transition-all duration-300"
             >
               <ChevronRight className="w-5 h-5" />
             </Button>
@@ -121,7 +122,7 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentIndex ? 'bg-gold scale-125' : 'bg-white/30 hover:bg-white/50'
+                  index === currentIndex ? 'bg-amber-200 scale-125' : 'bg-white/30 hover:bg-white/50'
                 }`}
               />
             ))}
