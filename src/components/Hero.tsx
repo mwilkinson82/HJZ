@@ -19,12 +19,13 @@ const Hero = () => {
           backgroundImage: 'url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80")'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black/70"></div>
+        {/* Strategic gradient - darker at top for text readability, lighter at bottom to show image */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/30"></div>
       </div>
       
-      {/* Frosted Glass Content Container */}
+      {/* Content Container with subtle frosting */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-12 max-w-5xl mx-6 shadow-2xl">
+        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-12 max-w-5xl mx-6 shadow-2xl">
           {/* Floating Elements */}
           <div className="absolute top-20 left-10 w-32 h-32 bg-gold/10 rounded-full blur-xl animate-pulse"></div>
           <div className="absolute bottom-32 right-16 w-24 h-24 bg-white/10 rounded-full blur-lg animate-bounce"></div>
