@@ -60,8 +60,12 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="text-center">
-                    <div className="w-20 h-20 bg-gold rounded-full mx-auto mb-3 flex items-center justify-center">
-                      <div className="text-white font-bold text-lg">HZ</div>
+                    <div className="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden border-2 border-gold">
+                      <img 
+                        src="/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png"
+                        alt="Hayley Zeoli"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <h3 className="font-semibold text-navy text-lg">Hayley Zeoli</h3>
                     <p className="text-gray-600 text-sm">Founder & Master Builder</p>
