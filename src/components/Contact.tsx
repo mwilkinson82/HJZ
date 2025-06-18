@@ -61,7 +61,7 @@ const Contact = () => {
                   <div className="text-center">
                     <div className="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden border-2 border-gold">
                       <img 
-                        src=src="/HJZ/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png"
+                        src=src=public/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png
                         alt="Hayley Zeoli"
                         className="w-full h-full object-cover"
                       />
