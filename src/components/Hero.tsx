@@ -41,7 +41,7 @@ const Hero = () => {
             </div>
             
             <p className="text-2xl md:text-3xl mb-6 font-light animate-fade-in-up leading-relaxed text-white drop-shadow-xl" style={{animationDelay: '0.3s'}}>
-              <span className="text-coral font-medium drop-shadow-lg">Crafting Legacy Homes.</span> Building Your Forever.
+              <span className="text-coral-300 font-medium drop-shadow-lg">Crafting Legacy Homes.</span> Building Your Forever.
             </p>
             
             <p className="text-lg md:text-xl mb-12 font-light text-white/95 animate-fade-in-up max-w-3xl mx-auto drop-shadow-lg" style={{animationDelay: '0.5s'}}>

@@ -48,16 +48,16 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className="py-20 bg-gradient-to-br from-slate-700 via-slate-600 to-blue-gray-700 text-white relative overflow-hidden">
-      <div className="absolute top-16 right-0 w-80 h-80 bg-amber-200/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-16 right-0 w-80 h-80 bg-coral/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-10 left-0 w-64 h-64 bg-emerald-100/10 rounded-full blur-2xl"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-sage-200/5 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16 section-animate">
           <h2 className="font-playfair text-5xl font-bold mb-6">
-            Stories of <span className="text-amber-200">Home</span>
+            Stories of <span className="text-coral">Home</span>
           </h2>
-          <div className="h-1 w-24 bg-amber-200 mx-auto mb-6 rounded-full"></div>
+          <div className="h-1 w-24 bg-coral mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
             Behind every custom home is a family with dreams. Here's what they're saying about their journey with Hayley.
           </p>
@@ -74,7 +74,7 @@ const Testimonials = () => {
                       alt={testimonials[currentIndex].project}
                       className="w-24 h-24 rounded-full mx-auto shadow-xl object-cover"
                     />
-                    <div className="absolute -top-1 -right-1 bg-amber-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                    <div className="absolute -top-1 -right-1 bg-coral text-white px-2 py-1 rounded-full text-xs font-bold">
                       {testimonials[currentIndex].value}
                     </div>
                   </div>
@@ -82,13 +82,13 @@ const Testimonials = () => {
                     <div className="font-semibold text-slate-700 text-lg mb-1">
                       {testimonials[currentIndex].client}
                     </div>
-                    <div className="text-amber-600 text-sm font-medium">
+                    <div className="text-coral text-sm font-medium">
                       {testimonials[currentIndex].project}
                     </div>
                   </div>
                 </div>
                 <div className="md:col-span-3">
-                  <div className="text-amber-500 text-5xl font-playfair mb-3">"</div>
+                  <div className="text-coral text-5xl font-playfair mb-3">"</div>
                   <blockquote className="text-lg md:text-xl text-gray-700 leading-relaxed font-light italic">
                     {testimonials[currentIndex].quote}
                   </blockquote>
@@ -102,7 +102,7 @@ const Testimonials = () => {
               variant="outline" 
               size="lg" 
               onClick={prevTestimonial}
-              className="rounded-full w-12 h-12 p-0 border-2 border-amber-200/40 text-amber-200 hover:bg-amber-200 hover:text-slate-700 transition-all duration-300"
+              className="rounded-full w-12 h-12 p-0 border-2 border-coral/40 text-coral hover:bg-coral hover:text-white transition-all duration-300"
             >
               <ChevronLeft className="w-5 h-5" />
             </Button>
@@ -110,7 +110,7 @@ const Testimonials = () => {
               variant="outline" 
               size="lg" 
               onClick={nextTestimonial}
-              className="rounded-full w-12 h-12 p-0 border-2 border-amber-200/40 text-amber-200 hover:bg-amber-200 hover:text-slate-700 transition-all duration-300"
+              className="rounded-full w-12 h-12 p-0 border-2 border-coral/40 text-coral hover:bg-coral hover:text-white transition-all duration-300"
             >
               <ChevronRight className="w-5 h-5" />
             </Button>
@@ -122,7 +122,7 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentIndex ? 'bg-amber-200 scale-125' : 'bg-white/30 hover:bg-white/50'
+                  index === currentIndex ? 'bg-coral scale-125' : 'bg-white/30 hover:bg-white/50'
                 }`}
               />
             ))}

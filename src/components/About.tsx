@@ -46,7 +46,7 @@ const About = () => {
           <div className="section-animate space-y-8">
             <div>
               <h2 className="font-playfair text-6xl font-bold text-navy mb-4 leading-tight">
-                Meet 
+                <span className="font-mono text-gray-400 text-3xl tracking-wider transform -rotate-1 inline-block border-b-2 border-gray-300">Meet</span>
                 <span className="text-gradient-coral block">Hayley Zeoli</span>
               </h2>
               <div className="h-1 w-24 bg-coral rounded-full mb-8"></div>
