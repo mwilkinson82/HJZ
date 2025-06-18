@@ -10,24 +10,22 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-navy via-navy-600 to-navy text-white py-20 relative overflow-hidden">
-      {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl"></div>
+    <footer className="bg-gradient-to-br from-navy via-navy to-navy text-white py-16 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-80 h-80 bg-gold/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-2xl"></div>
       
       <div className="container mx-auto px-6 relative">
-        <div className="grid md:grid-cols-4 gap-12 mb-16">
-          {/* Hayley's Brand */}
+        <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <div className="mb-8">
-              <div className="font-playfair text-4xl font-bold text-gold mb-2">
+            <div className="mb-6">
+              <div className="font-playfair text-3xl font-bold text-gold mb-2">
                 Hayley Zeoli
               </div>
-              <div className="text-xl text-gray-300 font-light">
+              <div className="text-lg text-gray-300 font-light">
                 HJZ Management
               </div> 
             </div>
-            <p className="text-gray-300 mb-8 leading-relaxed text-lg">
+            <p className="text-gray-300 mb-6 leading-relaxed">
               Greater Boston's premier woman-owned custom home builder. Creating extraordinary 
               spaces where families build their legacies, one dream at a time.
             </p>
@@ -47,10 +45,9 @@ const Footer = () => {
             </div>
           </div>
           
-          {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-xl mb-6 text-gold font-playfair">Explore</h4>
-            <nav className="space-y-4">
+            <h4 className="font-semibold text-lg mb-4 text-gold font-playfair">Explore</h4>
+            <nav className="space-y-3">
               <button 
                 onClick={() => scrollToSection('about')}
                 className="block text-gray-300 hover:text-gold transition-colors duration-300 text-left"
@@ -84,10 +81,9 @@ const Footer = () => {
             </nav>
           </div>
           
-          {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-xl mb-6 text-gold font-playfair">Connect</h4>
-            <div className="space-y-4 text-gray-300">
+            <h4 className="font-semibold text-lg mb-4 text-gold font-playfair">Connect</h4>
+            <div className="space-y-3 text-gray-300">
               <div>
                 <div className="font-medium mb-1">Direct Line</div>
                 <div className="text-white hover:text-gold transition-colors cursor-pointer">
@@ -110,21 +106,20 @@ const Footer = () => {
           </div>
         </div>
         
-        <hr className="border-gray-600 my-12" />
+        <hr className="border-gray-600 my-8" />
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <div className="mb-4 md:mb-0">
             © 2025 HJZ Management & Hayley Zeoli. All rights reserved.
           </div>
-          <div className="flex space-x-6">
+          <div className="flex space-x-4">
             <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-gold transition-colors">Terms</a>
             <a href="#" className="hover:text-gold transition-colors">Accessibility</a>
           </div>
         </div>
         
-        {/* Personal Touch */}
-        <div className="text-center mt-12 pt-8 border-t border-gray-600">
+        <div className="text-center mt-8 pt-6 border-t border-gray-600">
           <p className="text-gray-400 italic">
             "Built with passion for New England families who demand excellence."
           </p>
