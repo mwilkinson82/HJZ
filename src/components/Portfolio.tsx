@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -11,35 +10,35 @@ const Portfolio = () => {
       location: "Boston, MA",
       description: "Historic charm meets modern luxury",
       value: "$4.2M",
-      image: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
       title: "Cambridge Sanctuary",
       location: "Cambridge, MA", 
       description: "Contemporary masterpiece with soul",
       value: "$3.8M",
-      image: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
       title: "Newton Dream Estate",
       location: "Newton, MA",
       description: "Where family memories are crafted",
       value: "$5.1M", 
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
       title: "Brookline Heritage Home",
       location: "Brookline, MA",
       description: "Preserving legacy, embracing future",
       value: "$3.5M",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
       title: "Wellesley Manor",
       location: "Wellesley, MA",
       description: "Timeless elegance redefined",
       value: "$6.2M",
-      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
       title: "Lexington Luxury Retreat",
