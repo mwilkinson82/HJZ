@@ -44,7 +44,7 @@ const Contact = () => {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 section-animate">
             <h2 className="font-playfair text-5xl font-bold text-white mb-6">
-              Let's Create Your <span className="text-gold">Legacy</span>
+              Let's Create Your <span className="text-coral">Legacy</span>
             </h2>
             <div className="h-1 w-24 bg-gold mx-auto mb-6 rounded-full"></div>
             <p className="text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
