@@ -55,6 +55,7 @@
 
   body {
     @apply bg-background text-foreground font-inter;
+    scroll-behavior: smooth;
   }
   
   html {
@@ -64,7 +65,7 @@
 
 @layer components {
   .section-animate {
-    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+    @apply opacity-0 translate-y-12 transition-all duration-1000 ease-out;
   }
   
   .section-animate.in-view {
@@ -72,7 +73,7 @@
   }
   
   .hover-lift {
-    @apply transition-transform duration-300 hover:scale-105 hover:shadow-xl;
+    @apply transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-2;
   }
   
   .gold-gradient {
@@ -85,4 +86,75 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  
+  /* Premium button effects */
+  .btn-premium {
+    @apply relative overflow-hidden transition-all duration-500;
+  }
+  
+  .btn-premium::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+  
+  .btn-premium:hover::before {
+    transform: translateX(100%);
+  }
+  
+  /* Parallax scroll effects */
+  .parallax-slow {
+    animation: parallax-float 20s ease-in-out infinite;
+  }
+  
+  @keyframes parallax-float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+  }
+  
+  /* Custom animations for premium feel */
+  .animate-fade-in-up {
+    animation: fadeInUp 1.2s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Luxury text effects */
+  .text-shadow-luxury {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Premium card hover effects */
+  .card-premium:hover {
+    @apply shadow-2xl;
+    transform: translateY(-8px) scale(1.02);
+  }
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #D4AF37, #B8952E);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #B8952E, #D4AF37);
 }

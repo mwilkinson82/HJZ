@@ -4,48 +4,95 @@ import { Card } from '@/components/ui/card';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Image */}
-          <div className="section-animate">
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="HJZ Management Founder"
-                className="rounded-lg shadow-2xl w-full"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-gold text-white p-4 rounded-lg shadow-lg">
+    <section id="about" className="py-32 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      {/* Background Decorative Elements */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 bg-navy/5 rounded-full blur-2xl"></div>
+      
+      <div className="container mx-auto px-6 relative">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
+          {/* Hayley's Image with Premium Styling */}
+          <div className="section-animate relative">
+            <div className="relative group">
+              {/* Main Image */}
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Hayley Zeoli - Founder & Master Builder"
+                  className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent"></div>
+              </div>
+              
+              {/* Floating Badge */}
+              <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-gold/20">
                 <div className="text-center">
-                  <div className="text-sm font-medium">Woman-Owned</div>
-                  <div className="text-xs">Business</div>
+                  <div className="text-gold text-2xl font-bold">20+</div>
+                  <div className="text-navy text-sm font-medium">Years Mastery</div>
+                </div>
+              </div>
+              
+              {/* Woman-Owned Badge */}
+              <div className="absolute -top-6 -left-6 bg-gold text-white px-6 py-3 rounded-full shadow-lg transform -rotate-3">
+                <div className="text-center">
+                  <div className="text-sm font-bold">Woman-Owned</div>
+                  <div className="text-xs opacity-90">& Proud</div>
                 </div>
               </div>
             </div>
           </div>
           
-          {/* Content */}
-          <div className="section-animate">
-            <h2 className="font-playfair text-4xl md:text-5xl font-bold text-navy mb-6">
-              Crafting Dreams Into Reality
-            </h2>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              For over two decades, HJZ Management has been the trusted name among Boston's most discerning homeowners. As a woman-owned business, we bring a unique perspective to luxury custom home construction, combining meticulous attention to detail with innovative design solutions.
-            </p>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Our commitment extends beyond exceptional craftsmanship—we believe in creating lasting relationships with our clients, understanding that your home is a reflection of your values, aspirations, and lifestyle.
-            </p>
+          {/* Content with Personality */}
+          <div className="section-animate space-y-8">
+            <div>
+              <h2 className="font-playfair text-6xl font-bold text-navy mb-4 leading-tight">
+                Meet 
+                <span className="text-gradient-gold block">Hayley Zeoli</span>
+              </h2>
+              <div className="h-1 w-24 bg-gold rounded-full mb-8"></div>
+            </div>
             
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-6">
-              <Card className="p-6 text-center hover-lift">
-                <div className="text-3xl font-bold text-gold mb-2">20+</div>
-                <div className="text-sm text-gray-600">Years of Excellence</div>
+            <div className="space-y-6 text-lg leading-relaxed">
+              <p className="text-gray-700">
+                <span className="text-gold font-semibold text-xl">"Every home has a soul waiting to be discovered."</span>
+              </p>
+              
+              <p className="text-gray-700">
+                For two decades, I've been the trusted confidante of New England's most discerning families, 
+                transforming their deepest aspirations into architectural poetry. As a woman in a traditionally 
+                male-dominated field, I bring an intuitive understanding of how families truly live, love, and create memories.
+              </p>
+              
+              <p className="text-gray-700">
+                My approach isn't just about building houses—it's about crafting legacies. Each project begins 
+                with understanding your story, your dreams, your vision of the perfect life. Then, through meticulous 
+                craftsmanship and innovative design, we bring that vision to life in ways that exceed even your wildest expectations.
+              </p>
+            </div>
+            
+            {/* Signature Achievement Stats */}
+            <div className="grid grid-cols-3 gap-6 pt-8">
+              <Card className="p-6 text-center hover-lift bg-white/80 backdrop-blur border-gold/20">
+                <div className="text-3xl font-bold text-gold mb-2 font-playfair">$50M+</div>
+                <div className="text-sm text-gray-600 font-medium">Dreams Built</div>
               </Card>
-              <Card className="p-6 text-center hover-lift">
-                <div className="text-3xl font-bold text-gold mb-2">100+</div>
-                <div className="text-sm text-gray-600">Luxury Homes</div>
+              <Card className="p-6 text-center hover-lift bg-white/80 backdrop-blur border-gold/20">
+                <div className="text-3xl font-bold text-gold mb-2 font-playfair">100+</div>
+                <div className="text-sm text-gray-600 font-medium">Luxury Estates</div>
               </Card>
+              <Card className="p-6 text-center hover-lift bg-white/80 backdrop-blur border-gold/20">
+                <div className="text-3xl font-bold text-gold mb-2 font-playfair">5★</div>
+                <div className="text-sm text-gray-600 font-medium">Client Rating</div>
+              </Card>
+            </div>
+            
+            {/* Personal Touch Quote */}
+            <div className="bg-navy/5 p-8 rounded-2xl border-l-4 border-gold">
+              <p className="text-navy italic text-lg font-light">
+                "When you choose HJZ Management, you're not just hiring a builder—you're partnering with 
+                someone who will guard your vision as fiercely as their own reputation."
+              </p>
+              <div className="mt-4 text-gold font-semibold">— Hayley Zeoli</div>
             </div>
           </div>
         </div>
