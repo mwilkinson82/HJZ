@@ -17,7 +17,7 @@ const About = () => {
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png"
                   alt="Hayley Zeoli - Founder & Master Builder"
                   className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
