@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +66,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				gold: {
+					DEFAULT: '#D4AF37',
+					50: '#FAF7E6',
+					100: '#F5EFCD',
+					200: '#EBDF9B',
+					300: '#E1CF69',
+					400: '#D7BF37',
+					500: '#D4AF37',
+					600: '#B8952E',
+					700: '#9C7B25',
+					800: '#80611C',
+					900: '#644713'
+				},
+				navy: {
+					DEFAULT: '#0A2239',
+					50: '#E6EBF2',
+					100: '#CDD6E5',
+					200: '#9BACCD',
+					300: '#6983B4',
+					400: '#37599C',
+					500: '#0A2239',
+					600: '#081C2E',
+					700: '#061623',
+					800: '#041018',
+					900: '#020A0D'
 				}
 			},
 			borderRadius: {
@@ -84,11 +115,33 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'fade-in-up': 'fade-in-up 0.8s ease-out'
 			}
 		}
 	},
