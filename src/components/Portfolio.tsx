@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -11,7 +10,7 @@ const Portfolio = () => {
       location: "Boston, MA",
       description: "Historic charm meets modern luxury",
       value: "$4.2M",
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
     },
     {
       title: "Cambridge Sanctuary",

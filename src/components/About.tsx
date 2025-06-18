@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 
@@ -28,7 +27,7 @@ const About = () => {
               {/* Floating Badge */}
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-coral/20">
                 <div className="text-center">
-                  <div className="text-coral text-2xl font-bold">20+</div>
+                  <div className="text-coral text-2xl font-bold">15+</div>
                   <div className="text-navy text-sm font-medium">Years Mastery</div>
                 </div>
               </div>
@@ -69,7 +68,7 @@ const About = () => {
               </p>
               
               <p className="text-gray-700">
-                For two decades, I've been the trusted confidante of New England's most discerning families, 
+                For the past fifteen years, I've been the trusted confidante of New England's most discerning families, 
                 transforming their deepest aspirations into architectural poetry. As a woman in a traditionally 
                 male-dominated field, I bring an intuitive understanding of how families truly live, love, and create memories.
               </p>
