@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Parallax Effect */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-110 transition-transform duration-[20s] ease-out"
@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="absolute bottom-32 right-16 w-24 h-24 bg-white/10 rounded-full blur-lg animate-bounce"></div>
       
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto py-20">
         <div className="animate-fade-in-up">
           <h1 className="font-playfair text-7xl md:text-8xl font-bold mb-4 tracking-tight leading-none">
             Hayley Zeoli
