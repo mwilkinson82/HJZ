@@ -24,16 +24,20 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-xl shadow-xl border-b border-gold/20' : 'bg-transparent'
+      isScrolled ? 'bg-white/95 backdrop-blur-xl shadow-xl border-b border-gold/20' : 'bg-black/20 backdrop-blur-md'
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-24">
           {/* Logo with Personality */}
           <div className="group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="font-playfair text-4xl md:text-5xl font-bold text-navy group-hover:text-gold transition-colors duration-300">
+            <div className={`font-playfair text-4xl md:text-5xl font-bold group-hover:text-gold transition-colors duration-300 ${
+              isScrolled ? 'text-navy' : 'text-white drop-shadow-lg'
+            }`}>
               HJZ Management
             </div>
-            <div className="text-sm text-gold font-medium tracking-wider uppercase opacity-80">
+            <div className={`text-sm font-medium tracking-wider uppercase opacity-90 ${
+              isScrolled ? 'text-gold' : 'text-gold-200 drop-shadow-md'
+            }`}>
               New England Custom Homes
             </div>
           </div>
@@ -42,28 +46,36 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-gray-700 hover:text-gold transition-all duration-300 font-medium relative group py-2"
+              className={`hover:text-gold transition-all duration-300 font-medium relative group py-2 ${
+                isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'
+              }`}
             >
               <span>Meet Hayley</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-gray-700 hover:text-gold transition-all duration-300 font-medium relative group py-2"
+              className={`hover:text-gold transition-all duration-300 font-medium relative group py-2 ${
+                isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'
+              }`}
             >
               <span>Our Artistry</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button 
               onClick={() => scrollToSection('portfolio')}
-              className="text-gray-700 hover:text-gold transition-all duration-300 font-medium relative group py-2"
+              className={`hover:text-gold transition-all duration-300 font-medium relative group py-2 ${
+                isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'
+              }`}
             >
               <span>Portfolio</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button 
               onClick={() => scrollToSection('testimonials')}
-              className="text-gray-700 hover:text-gold transition-all duration-300 font-medium relative group py-2"
+              className={`hover:text-gold transition-all duration-300 font-medium relative group py-2 ${
+                isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'
+              }`}
             >
               <span>Love Letters</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></div>
@@ -84,9 +96,15 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
-              <span className={`block w-6 h-0.5 bg-navy transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-1' : ''}`}></span>
-              <span className={`block w-6 h-0.5 bg-navy mt-1 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
-              <span className={`block w-6 h-0.5 bg-navy mt-1 transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-1' : ''}`}></span>
+              <span className={`block w-6 h-0.5 transition-all duration-300 ${
+                isMobileMenuOpen ? 'rotate-45 translate-y-1' : ''
+              } ${isScrolled ? 'bg-navy' : 'bg-white drop-shadow-md'}`}></span>
+              <span className={`block w-6 h-0.5 mt-1 transition-all duration-300 ${
+                isMobileMenuOpen ? 'opacity-0' : ''
+              } ${isScrolled ? 'bg-navy' : 'bg-white drop-shadow-md'}`}></span>
+              <span className={`block w-6 h-0.5 mt-1 transition-all duration-300 ${
+                isMobileMenuOpen ? '-rotate-45 -translate-y-1' : ''
+              } ${isScrolled ? 'bg-navy' : 'bg-white drop-shadow-md'}`}></span>
             </div>
           </button>
         </div>
