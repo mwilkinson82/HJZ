@@ -20,14 +20,14 @@ const Hero = () => {
         }}
       >
         {/* Strategic gradient - darker at top for text readability, lighter at bottom to show image */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/20"></div>
       </div>
       
       {/* Content Container with subtle frosting */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-12 max-w-5xl mx-6 shadow-2xl">
+        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-12 max-w-5xl mx-6 shadow-2xl">
           {/* Floating Elements */}
-          <div className="absolute top-20 left-10 w-32 h-32 bg-gold/10 rounded-full blur-xl animate-pulse"></div>
+          <div className="absolute top-20 left-10 w-32 h-32 bg-coral/10 rounded-full blur-xl animate-pulse"></div>
           <div className="absolute bottom-32 right-16 w-24 h-24 bg-white/10 rounded-full blur-lg animate-bounce"></div>
           
           {/* Content */}
@@ -37,11 +37,11 @@ const Hero = () => {
                 Where Dreams Take
                 <span className="block text-white">Root in New England</span>
               </h1>
-              <div className="h-1 w-32 bg-gold mx-auto mb-8 rounded-full animate-pulse shadow-lg"></div>
+              <div className="h-1 w-32 bg-coral mx-auto mb-8 rounded-full animate-pulse shadow-lg"></div>
             </div>
             
             <p className="text-2xl md:text-3xl mb-6 font-light animate-fade-in-up leading-relaxed text-white drop-shadow-xl" style={{animationDelay: '0.3s'}}>
-              <span className="text-gold font-medium drop-shadow-lg">Crafting Legacy Homes.</span> Building Your Forever.
+              <span className="text-coral font-medium drop-shadow-lg">Crafting Legacy Homes.</span> Building Your Forever.
             </p>
             
             <p className="text-lg md:text-xl mb-12 font-light text-white/95 animate-fade-in-up max-w-3xl mx-auto drop-shadow-lg" style={{animationDelay: '0.5s'}}>
@@ -53,7 +53,7 @@ const Hero = () => {
               <Button 
                 onClick={() => scrollToSection('contact')}
                 size="lg"
-                className="group bg-gold hover:bg-gold-600 text-white font-semibold px-12 py-6 text-lg rounded-full shadow-2xl hover:shadow-gold/25 transition-all duration-500 hover:scale-105"
+                className="group bg-coral hover:bg-coral-600 text-white font-semibold px-12 py-6 text-lg rounded-full shadow-2xl hover:shadow-coral/25 transition-all duration-500 hover:scale-105"
               >
                 <span className="group-hover:scale-110 transition-transform duration-300">Start Building Your Dream</span>
               </Button>

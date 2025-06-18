@@ -26,16 +26,16 @@ const Credentials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-gold/5 via-white to-gold/5 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-r from-coral/5 via-white to-coral/5 relative overflow-hidden">
       <div className="absolute top-0 left-1/4 w-64 h-64 bg-navy/5 rounded-full blur-2xl"></div>
-      <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-gold/10 rounded-full blur-xl"></div>
+      <div className="absolute bottom-0 right-1/4 w-48 h-48 bg-coral/10 rounded-full blur-xl"></div>
       
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16 section-animate">
           <h2 className="font-playfair text-5xl font-bold text-navy mb-4">
-            Built on <span className="text-gold">Excellence</span>
+            Built on <span className="text-coral">Excellence</span>
           </h2>
-          <div className="h-1 w-24 bg-gold mx-auto mb-6 rounded-full"></div>
+          <div className="h-1 w-24 bg-coral mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Two decades of crafting dreams into reality across Greater Boston's most exclusive neighborhoods.
           </p>
@@ -48,8 +48,8 @@ const Credentials = () => {
               className="text-center section-animate group"
               style={{animationDelay: `${index * 0.1}s`}}
             >
-              <div className="bg-white p-6 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-500 border border-gold/10 hover:scale-105">
-                <div className="text-3xl md:text-4xl font-bold text-navy mb-2 font-playfair group-hover:text-gold transition-colors duration-300">
+              <div className="bg-white p-6 rounded-xl shadow-lg group-hover:shadow-xl transition-all duration-500 border border-coral/10 hover:scale-105">
+                <div className="text-3xl md:text-4xl font-bold text-navy mb-2 font-playfair group-hover:text-coral transition-colors duration-300">
                   {item.number}
                 </div>
                 <div className="text-sm md:text-base font-semibold text-gray-700 mb-1">
@@ -68,7 +68,7 @@ const Credentials = () => {
             <p className="text-navy font-light text-lg italic">
               "Excellence isn't just our standard—it's our promise to every family we serve."
             </p>
-            <div className="text-gold font-semibold mt-2">— Hayley Zeoli</div>
+            <div className="text-coral font-semibold mt-2">— Hayley Zeoli</div>
           </div>
         </div>
       </div>

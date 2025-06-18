@@ -31,14 +31,14 @@ const Services = () => {
     <section id="services" className="py-32 bg-white relative overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50/50 to-white"></div>
-      <div className="absolute top-32 right-0 w-72 h-72 bg-gold/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-32 right-0 w-72 h-72 bg-coral/10 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-20 section-animate">
           <h2 className="font-playfair text-6xl font-bold text-navy mb-6">
-            Our <span className="text-gradient-gold">Artistry</span>
+            Our <span className="text-gradient-coral">Artistry</span>
           </h2>
-          <div className="h-1 w-32 bg-gold mx-auto mb-8 rounded-full"></div>
+          <div className="h-1 w-32 bg-coral mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Three pillars of excellence that transform architectural dreams into lived-in poetry. 
             Each service crafted with the precision of a master, the heart of an artist.
@@ -55,13 +55,13 @@ const Services = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 bg-gold text-white px-4 py-2 rounded-full text-sm font-medium">
+                <div className="absolute bottom-4 left-4 bg-coral text-white px-4 py-2 rounded-full text-sm font-medium">
                   {service.highlight}
                 </div>
               </div>
               <CardHeader className="pb-4">
                 <CardTitle className="font-playfair text-2xl text-navy mb-2">{service.title}</CardTitle>
-                <div className="text-gold font-medium text-sm tracking-wide uppercase">{service.subtitle}</div>
+                <div className="text-coral font-medium text-sm tracking-wide uppercase">{service.subtitle}</div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 leading-relaxed">{service.description}</p>
@@ -72,11 +72,11 @@ const Services = () => {
         
         {/* Call to Action */}
         <div className="text-center mt-20 section-animate">
-          <div className="inline-block bg-gradient-to-r from-gold/10 to-navy/10 p-8 rounded-3xl">
+          <div className="inline-block bg-gradient-to-r from-coral/10 to-navy/10 p-8 rounded-3xl">
             <p className="text-lg text-navy mb-4 font-light">
               Ready to begin your architectural journey?
             </p>
-            <div className="text-gold font-semibold text-xl italic">
+            <div className="text-coral font-semibold text-xl italic">
               "Every masterpiece starts with a single conversation."
             </div>
           </div>

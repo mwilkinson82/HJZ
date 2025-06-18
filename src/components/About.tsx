@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className="py-32 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-coral/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-navy/5 rounded-full blur-2xl"></div>
       
       <div className="container mx-auto px-6 relative">
@@ -25,15 +25,15 @@ const About = () => {
               </div>
               
               {/* Floating Badge */}
-              <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-gold/20">
+              <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-coral/20">
                 <div className="text-center">
-                  <div className="text-gold text-2xl font-bold">20+</div>
+                  <div className="text-coral text-2xl font-bold">20+</div>
                   <div className="text-navy text-sm font-medium">Years Mastery</div>
                 </div>
               </div>
               
               {/* Woman-Owned Badge */}
-              <div className="absolute -top-6 -left-6 bg-gold text-white px-6 py-3 rounded-full shadow-lg transform -rotate-3">
+              <div className="absolute -top-6 -left-6 bg-coral text-white px-6 py-3 rounded-full shadow-lg transform -rotate-3">
                 <div className="text-center">
                   <div className="text-sm font-bold">Woman-Owned</div>
                   <div className="text-xs opacity-90">& Proud</div>
@@ -47,14 +47,14 @@ const About = () => {
             <div>
               <h2 className="font-playfair text-6xl font-bold text-navy mb-4 leading-tight">
                 Meet 
-                <span className="text-gradient-gold block">Hayley Zeoli</span>
+                <span className="text-gradient-coral block">Hayley Zeoli</span>
               </h2>
-              <div className="h-1 w-24 bg-gold rounded-full mb-8"></div>
+              <div className="h-1 w-24 bg-coral rounded-full mb-8"></div>
             </div>
             
             <div className="space-y-6 text-lg leading-relaxed">
               <p className="text-gray-700">
-                <span className="text-gold font-semibold text-xl">"Every home has a soul waiting to be discovered."</span>
+                <span className="text-coral font-semibold text-xl">"Every home has a soul waiting to be discovered."</span>
               </p>
               
               <p className="text-gray-700">
@@ -72,27 +72,27 @@ const About = () => {
             
             {/* Signature Achievement Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8">
-              <Card className="p-6 text-center hover-lift bg-white/80 backdrop-blur border-gold/20">
-                <div className="text-3xl font-bold text-gold mb-2 font-playfair">$50M+</div>
+              <Card className="p-6 text-center hover-lift bg-white/80 backdrop-blur border-coral/20">
+                <div className="text-3xl font-bold text-coral mb-2 font-playfair">$50M+</div>
                 <div className="text-sm text-gray-600 font-medium">Dreams Built</div>
               </Card>
-              <Card className="p-6 text-center hover-lift bg-white/80 backdrop-blur border-gold/20">
-                <div className="text-3xl font-bold text-gold mb-2 font-playfair">100+</div>
+              <Card className="p-6 text-center hover-lift bg-white/80 backdrop-blur border-coral/20">
+                <div className="text-3xl font-bold text-coral mb-2 font-playfair">100+</div>
                 <div className="text-sm text-gray-600 font-medium">Luxury Estates</div>
               </Card>
-              <Card className="p-6 text-center hover-lift bg-white/80 backdrop-blur border-gold/20">
-                <div className="text-3xl font-bold text-gold mb-2 font-playfair">5★</div>
+              <Card className="p-6 text-center hover-lift bg-white/80 backdrop-blur border-coral/20">
+                <div className="text-3xl font-bold text-coral mb-2 font-playfair">5★</div>
                 <div className="text-sm text-gray-600 font-medium">Client Rating</div>
               </Card>
             </div>
             
             {/* Personal Touch Quote */}
-            <div className="bg-navy/5 p-8 rounded-2xl border-l-4 border-gold">
+            <div className="bg-navy/5 p-8 rounded-2xl border-l-4 border-coral">
               <p className="text-navy italic text-lg font-light">
                 "When you choose HJZ Management, you're not just hiring a builder—you're partnering with 
                 someone who will guard your vision as fiercely as their own reputation."
               </p>
-              <div className="mt-4 text-gold font-semibold">— Hayley Zeoli</div>
+              <div className="mt-4 text-coral font-semibold">— Hayley Zeoli</div>
             </div>
           </div>
         </div>
