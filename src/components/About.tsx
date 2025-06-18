@@ -46,7 +46,17 @@ const About = () => {
           <div className="section-animate space-y-8">
             <div>
               <h2 className="font-playfair text-6xl font-bold text-navy mb-4 leading-tight">
-                <span className="font-mono text-gray-400 text-3xl tracking-wider transform -rotate-1 inline-block border-b-2 border-gray-300">Meet</span>
+                <span className="font-mono text-2xl tracking-[0.3em] transform inline-block text-gray-400 uppercase relative border-2 border-dashed border-gray-300 px-4 py-2 bg-blue-50/30" 
+                      style={{ 
+                        fontFamily: 'Courier New, monospace',
+                        letterSpacing: '0.15em',
+                        transform: 'rotate(-1deg)',
+                        textShadow: '1px 1px 0px rgba(0,0,0,0.1)'
+                      }}>
+                  Meet
+                  <div className="absolute -bottom-1 -right-1 w-2 h-2 border border-gray-400 bg-white"></div>
+                  <div className="absolute -top-1 -left-1 w-2 h-2 border border-gray-400 bg-white"></div>
+                </span>
                 <span className="text-gradient-coral block">Hayley Zeoli</span>
               </h2>
               <div className="h-1 w-24 bg-coral rounded-full mb-8"></div>
