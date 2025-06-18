@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    --primary: 43 74% 52%;
+    --primary: 0 69% 67%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -33,7 +33,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 43 74% 52%;
+    --ring: 0 69% 67%;
 
     --radius: 0.5rem;
 
@@ -76,12 +76,12 @@
     @apply transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-2;
   }
   
-  .gold-gradient {
-    background: linear-gradient(135deg, #D4AF37 0%, #F5EFCD 100%);
+  .coral-gradient {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FFE5E5 100%);
   }
   
-  .text-gradient-gold {
-    background: linear-gradient(135deg, #D4AF37 0%, #B8952E 100%);
+  .text-gradient-coral {
+    background: linear-gradient(135deg, #FF6B6B 0%, #E63946 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -151,10 +151,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #D4AF37, #B8952E);
+  background: linear-gradient(135deg, #FF6B6B, #E63946);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #B8952E, #D4AF37);
+  background: linear-gradient(135deg, #E63946, #FF6B6B);
 }

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -67,18 +66,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				gold: {
-					DEFAULT: '#D4AF37',
-					50: '#FAF7E6',
-					100: '#F5EFCD',
-					200: '#EBDF9B',
-					300: '#E1CF69',
-					400: '#D7BF37',
-					500: '#D4AF37',
-					600: '#B8952E',
-					700: '#9C7B25',
-					800: '#80611C',
-					900: '#644713'
+				coral: {
+					DEFAULT: '#FF6B6B',
+					50: '#FFF2F2',
+					100: '#FFE5E5',
+					200: '#FFCCCC',
+					300: '#FFB3B3',
+					400: '#FF9999',
+					500: '#FF6B6B',
+					600: '#FF5252',
+					700: '#FF3939',
+					800: '#E63946',
+					900: '#CC333F'
 				},
 				navy: {
 					DEFAULT: '#0A2239',
