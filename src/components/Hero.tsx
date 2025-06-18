@@ -25,7 +25,7 @@ const Hero = () => {
       
       {/* Content Container with subtle frosting */}
       <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-6">
-        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 sm:p-8 md:p-12 pb-16 sm:pb-20 max-w-5xl mx-auto shadow-2xl w-full relative">
+        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 sm:p-8 md:p-12 pb-20 sm:pb-24 max-w-5xl mx-auto shadow-2xl w-full relative">
           {/* Floating Elements */}
           <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-16 sm:w-32 h-16 sm:h-32 bg-coral/10 rounded-full blur-xl animate-pulse"></div>
           <div className="absolute bottom-16 sm:bottom-32 right-8 sm:right-16 w-12 sm:w-24 h-12 sm:h-24 bg-white/10 rounded-full blur-lg animate-bounce"></div>
@@ -68,8 +68,8 @@ const Hero = () => {
             </div>
           </div>
           
-          {/* Scroll Indicator - Perfectly centered at bottom of card */}
-          <div className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce">
+          {/* Scroll Indicator - Adjusted positioning */}
+          <div className="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
             <div className="flex flex-col items-center text-white/70">
               <div className="text-xs font-light mb-2 tracking-wider">SCROLL TO EXPLORE</div>
               <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
