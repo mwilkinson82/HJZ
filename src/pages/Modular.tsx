@@ -26,19 +26,19 @@ const Modular = () => {
       
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-gradient-to-br from-navy via-navy/95 to-coral/20 text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-coral/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-coral/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="container mx-auto px-6 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-playfair text-5xl md:text-6xl font-bold mb-6">
+            <h1 className="font-playfair text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
               Modular Homes by HJZ Construction
             </h1>
-            <div className="text-2xl md:text-3xl font-light mb-8 text-coral">
+            <div className="text-2xl md:text-3xl font-light mb-8 text-coral animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               Smarter. Faster.
             </div>
-            <p className="text-xl mb-12 text-gray-200">
+            <p className="text-xl mb-12 text-gray-200 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               Custom Modular Homes Built for New England Living
             </p>
-            <p className="text-lg leading-relaxed max-w-3xl mx-auto text-gray-300">
+            <p className="text-lg leading-relaxed max-w-3xl mx-auto text-gray-300 animate-fade-in-up" style={{animationDelay: '0.6s'}}>
               HJZ Construction proudly offers full-service modular home solutions designed to save 
               time, control costs, and deliver exceptional quality. With our trusted architect partners 
               and factory-built precision, your dream home is closer than ever.
@@ -50,7 +50,7 @@ const Modular = () => {
       {/* Featured Project Showcase */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 section-animate">
             <h2 className="font-playfair text-4xl font-bold text-navy mb-4">
               Featured <span className="text-coral">Modular</span> Projects
             </h2>
@@ -58,14 +58,14 @@ const Modular = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 section-animate">
               <img 
                 src="/HJZ/lovable-uploads/dcc5338f-96b1-4662-ab74-1399dd66baa5.png" 
                 alt="Completed Modern Modular Home with Natural Wood and Contemporary Design" 
                 className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 section-animate" style={{animationDelay: '0.2s'}}>
               <h3 className="font-playfair text-3xl font-bold text-navy">Modern Luxury Living</h3>
               <p className="text-gray-700 text-lg leading-relaxed">
                 This stunning modular home showcases the perfect blend of contemporary design and natural materials. 
@@ -73,15 +73,15 @@ const Modular = () => {
                 indoor-outdoor living spaces with beautiful landscaping.
               </p>
               <div className="flex flex-wrap gap-4">
-                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Custom Design</span>
-                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Natural Materials</span>
-                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Energy Efficient</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium hover:scale-110 transition-transform duration-200">Custom Design</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium hover:scale-110 transition-transform duration-200">Natural Materials</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium hover:scale-110 transition-transform duration-200">Energy Efficient</span>
               </div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 md:order-2">
+            <div className="space-y-6 md:order-2 section-animate" style={{animationDelay: '0.3s'}}>
               <h3 className="font-playfair text-3xl font-bold text-navy">Construction Process</h3>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Our modular construction process ensures precision and quality at every step. From factory-built 
@@ -89,12 +89,12 @@ const Modular = () => {
                 careful installation process during the construction phase.
               </p>
               <div className="flex flex-wrap gap-4">
-                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Quality Control</span>
-                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Professional Installation</span>
-                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Weather Protected</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium hover:scale-110 transition-transform duration-200">Quality Control</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium hover:scale-110 transition-transform duration-200">Professional Installation</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium hover:scale-110 transition-transform duration-200">Weather Protected</span>
               </div>
             </div>
-            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 md:order-1">
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 md:order-1 section-animate" style={{animationDelay: '0.4s'}}>
               <img 
                 src="/HJZ/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png" 
                 alt="Modular Home Construction Process with Crane Installation" 
@@ -108,7 +108,7 @@ const Modular = () => {
       {/* Why Choose Modular Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 section-animate">
             <h2 className="font-playfair text-4xl font-bold text-navy mb-4">
               Why Choose a Modular Home?
             </h2>
@@ -117,8 +117,8 @@ const Modular = () => {
           
           <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="w-3 h-3 bg-coral rounded-full mt-2 flex-shrink-0"></div>
+              <div key={index} className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-102 section-animate" style={{animationDelay: `${index * 0.1}s`}}>
+                <div className="w-3 h-3 bg-coral rounded-full mt-2 flex-shrink-0 animate-pulse"></div>
                 <p className="text-gray-700 text-lg leading-relaxed">{benefit}</p>
               </div>
             ))}
@@ -129,7 +129,7 @@ const Modular = () => {
       {/* Services Section */}
       <section className="py-20 bg-gradient-to-r from-coral/5 via-white to-coral/5">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 section-animate">
             <h2 className="font-playfair text-4xl font-bold text-navy mb-4">
               Modular Services Include
             </h2>
@@ -138,9 +138,9 @@ const Modular = () => {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {services.map((service, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-coral/10">
+              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-coral/10 hover:scale-105 section-animate" style={{animationDelay: `${index * 0.1}s`}}>
                 <div className="flex items-start space-x-4">
-                  <div className="w-3 h-3 bg-coral rounded-full mt-2 flex-shrink-0"></div>
+                  <div className="w-3 h-3 bg-coral rounded-full mt-2 flex-shrink-0 animate-pulse"></div>
                   <p className="text-gray-700 text-lg">{service}</p>
                 </div>
               </div>
@@ -151,7 +151,7 @@ const Modular = () => {
 
       {/* Design Collaboration Section */}
       <section className="py-20 bg-navy text-white">
-        <div className="container mx-auto px-6 text-center">
+        <div className="container mx-auto px-6 text-center section-animate">
           <h2 className="font-playfair text-4xl font-bold mb-8">
             Design <span className="text-coral">Collaboration</span>
           </h2>
