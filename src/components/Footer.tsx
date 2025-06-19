@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const Footer = () => {
@@ -6,6 +7,11 @@ const Footer = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const openGoogleReviews = () => {
+    // You'll need to provide the actual Google Reviews link
+    window.open('https://www.google.com/search?q=HJZ+Construction+reviews', '_blank');
   };
 
   return (
@@ -57,19 +63,19 @@ const Footer = () => {
                 onClick={() => scrollToSection('services')}
                 className="block text-gray-300 hover:text-coral transition-colors duration-300 text-left"
               >
-                Our Artistry
+                Our Services
               </button>
               <button 
                 onClick={() => scrollToSection('portfolio')}
                 className="block text-gray-300 hover:text-coral transition-colors duration-300 text-left"
               >
-                Dream Portfolios
+                Portfolio
               </button>
               <button 
                 onClick={() => scrollToSection('testimonials')}
                 className="block text-gray-300 hover:text-coral transition-colors duration-300 text-left"
               >
-                Stories of Home
+                Reviews
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
@@ -85,15 +91,44 @@ const Footer = () => {
             <div className="space-y-3 text-gray-300">
               <div>
                 <div className="font-medium mb-1">Direct Line</div>
-                <div className="text-white hover:text-coral transition-colors cursor-pointer">
+                <a href="tel:6176806716" className="text-white hover:text-coral transition-colors">
                   (617) 680-6716
-                </div>
+                </a>
               </div>
               <div>
                 <div className="font-medium mb-1">Email Hayley</div> 
-                <div className="text-white hover:text-coral transition-colors cursor-pointer">
+                <a href="mailto:info.hjzmgmt@gmail.com" className="text-white hover:text-coral transition-colors">
                   info.hjzmgmt@gmail.com
+                </a>
+              </div>
+              <div className="pt-2">
+                <div className="font-medium mb-2">Follow Us</div>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://www.instagram.com/hjz_construction_/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-coral transition-colors"
+                  >
+                    Instagram
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/Hjz.mgmt.inc/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-white hover:text-coral transition-colors"
+                  >
+                    Facebook
+                  </a>
                 </div>
+              </div>
+              <div className="pt-2">
+                <button 
+                  onClick={openGoogleReviews}
+                  className="text-white hover:text-coral transition-colors text-left"
+                >
+                  Google Reviews
+                </button>
               </div>
               <div className="pt-2">
                 <div className="font-medium mb-1">Service Area</div>

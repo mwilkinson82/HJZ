@@ -1,97 +1,63 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
 const Portfolio = () => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const projects = [
-    {
-      title: "Beacon Hill Estate",
-      location: "Boston, MA",
-      description: "Historic charm meets modern luxury",
-      value: "$4.2M",
-      image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      title: "Cambridge Sanctuary",
-      location: "Cambridge, MA", 
-      description: "Contemporary masterpiece with soul",
-      value: "$3.8M",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      title: "Newton Dream Estate",
-      location: "Newton, MA",
-      description: "Where family memories are crafted",
-      value: "$5.1M", 
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      title: "Brookline Heritage Home",
-      location: "Brookline, MA",
-      description: "Preserving legacy, embracing future",
-      value: "$3.5M",
-      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      title: "Wellesley Manor",
-      location: "Wellesley, MA",
-      description: "Timeless elegance redefined",
-      value: "$6.2M",
-      image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    },
-    {
-      title: "Lexington Luxury Retreat",
-      location: "Lexington, MA",
-      description: "Nature's embrace, architect's vision",
-      value: "$4.7M",
-      image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-    }
+    "/lovable-uploads/b78d37cb-af1c-448a-b894-d009288e9094.png",
+    "/lovable-uploads/1d488505-e6c3-4c7e-a611-c8e7512fdc83.png", 
+    "/lovable-uploads/91feba13-e2cc-4db2-a9ec-00666c8161c8.png",
+    "/lovable-uploads/df2bc432-bb84-42ff-a81b-74019da44bec.png",
+    "/lovable-uploads/2ef3245d-28ef-4a2e-88c2-a722d99a1381.png",
+    "/lovable-uploads/21fd4a4e-f031-4029-9dc5-c7839afc8b32.png",
+    "/lovable-uploads/2c421101-d6a9-48a9-8068-3c6cff9e7340.png",
+    "/lovable-uploads/2ec45492-974b-4f84-954d-1bf6d6ce566d.png",
+    "/lovable-uploads/21025a41-6a90-4047-b533-c1af8d850ecf.png",
+    "/lovable-uploads/aafb29c2-abf7-4529-8056-52b100904a3d.png"
   ];
+
+  const openModal = () => {
+    // For now, we'll create a simple modal. This can be enhanced later.
+    setSelectedImage("modal");
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
 
   return (
     <section id="portfolio" className="py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16 section-animate">
           <h2 className="font-playfair text-5xl font-bold text-navy mb-6">
-            Dream <span className="text-coral">Portfolios</span>
+            Our <span className="text-coral">Portfolio</span>
           </h2>
           <div className="h-1 w-24 bg-coral mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Each home tells a story. Here are some of our favorite chapters—multi-million dollar 
-            sanctuaries where New England families have chosen to build their legacies.
+            Each project represents our commitment to excellence. From custom homes to renovations, 
+            insurance claims to ADUs—see the craftsmanship that defines HJZ Construction.
           </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {projects.map((project, index) => (
+          {projects.map((image, index) => (
             <div 
               key={index}
               className={`section-animate relative group cursor-pointer ${
                 index % 3 === 1 ? 'md:mt-8' : index % 3 === 2 ? 'md:mt-4' : ''
               }`}
               style={{animationDelay: `${index * 0.1}s`}}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
+              onClick={() => setSelectedImage(image)}
             >
               <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 bg-white">
                 <img 
-                  src={project.image}
-                  alt={project.title}
+                  src={image}
+                  alt={`HJZ Construction Project ${index + 1}`}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-navy/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                <div className={`absolute bottom-0 left-0 right-0 p-4 text-white transform transition-all duration-300 ${
-                  hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0'
-                }`}>
-                  <div className="bg-coral text-navy px-2 py-1 rounded text-xs font-bold mb-2 inline-block">
-                    {project.value}
-                  </div>
-                  <h3 className="font-playfair text-lg font-bold mb-1">{project.title}</h3>
-                  <p className="text-sm opacity-90 mb-1">{project.location}</p>
-                  <p className="text-xs font-light italic">{project.description}</p>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
           ))}
@@ -100,20 +66,77 @@ const Portfolio = () => {
         <div className="text-center section-animate">
           <div className="inline-block bg-gradient-to-r from-coral/5 to-navy/5 p-8 rounded-2xl mb-6">
             <p className="text-navy text-lg font-light mb-4 max-w-2xl">
-              These homes represent more than construction—they're the foundation of family stories.
+              These projects represent more than construction—they're the foundation of family stories.
             </p>
             <div className="text-coral font-semibold text-lg italic font-playfair mb-6">
               "Ready to see your vision become reality?"
             </div>
             <Button 
               size="lg"
+              onClick={openModal}
               className="bg-navy hover:bg-navy/90 text-white font-semibold px-10 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
-              Explore Full Portfolio
+              View Full Portfolio
             </Button>
           </div>
         </div>
       </div>
+
+      {/* Simple Modal for Portfolio */}
+      {selectedImage && selectedImage !== "modal" && (
+        <div 
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+          onClick={closeModal}
+        >
+          <div className="relative max-w-4xl max-h-[90vh] w-full">
+            <img 
+              src={selectedImage}
+              alt="Portfolio Item"
+              className="w-full h-full object-contain rounded-lg"
+            />
+            <button 
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/70 transition-colors"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Full Portfolio Modal */}
+      {selectedImage === "modal" && (
+        <div 
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+          onClick={closeModal}
+        >
+          <div className="relative max-w-6xl max-h-[90vh] w-full bg-white rounded-lg overflow-hidden">
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-6">
+                <h3 className="text-2xl font-playfair font-bold text-navy">Our Complete Portfolio</h3>
+                <button 
+                  onClick={closeModal}
+                  className="text-gray-400 hover:text-gray-600 text-2xl"
+                >
+                  ✕
+                </button>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-h-[60vh] overflow-y-auto">
+                {projects.map((image, index) => (
+                  <div key={index} className="relative group cursor-pointer">
+                    <img 
+                      src={image}
+                      alt={`Portfolio Item ${index + 1}`}
+                      className="w-full h-48 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+                      onClick={() => setSelectedImage(image)}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

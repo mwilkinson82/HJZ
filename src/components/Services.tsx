@@ -1,31 +1,41 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
-      title: "Dream Home Design",
-      subtitle: "Where Vision Meets Reality",
-      description: "From initial sketches over morning coffee to detailed architectural masterpieces—every line drawn with intention, every space crafted with purpose.",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      highlight: "Bespoke Blueprints"
+      title: "Accessory Dwelling Units",
+      subtitle: "Build Smart. Live Free.",
+      description: "From detached cottages to garage conversions, we deliver turnkey ADU solutions designed for your goals and your lot. Navigate Massachusetts zoning laws with confidence.",
+      image: "/lovable-uploads/1d488505-e6c3-4c7e-a611-c8e7512fdc83.png",
+      highlight: "Design-Build Experts",
+      link: "/adu"
     },
     {
-      title: "Master Craftsmanship",
-      subtitle: "Artisans at Every Turn",
-      description: "White-glove construction management where every nail, every joint, every finish reflects our obsession with perfection. Your dream deserves nothing less.",
-      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      highlight: "Turnkey Excellence"
+      title: "Insurance Claims",
+      subtitle: "Rebuilding Lives, Restoring Homes",
+      description: "Decades of experience in construction and insurance claims enable us to assess and articulate damage details like no other contractor. We work directly with your insurance company.",
+      image: "/lovable-uploads/df2bc432-bb84-42ff-a81b-74019da44bec.png",
+      highlight: "Claims Specialists",
+      link: "/insurance"
     },
     {
-      title: "Estate Transformation",
-      subtitle: "Honoring Heritage, Embracing Future",
-      description: "Breathing new life into cherished properties while preserving their soul. Where historic charm meets modern luxury in perfect harmony.",
-      image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      highlight: "Legacy Preservation"
+      title: "Modular Homes",
+      subtitle: "Smarter. Faster.",
+      description: "Custom modular home solutions designed to save time, control costs, and deliver exceptional quality. Factory-built precision meets New England living.",
+      image: "/lovable-uploads/b78d37cb-af1c-448a-b894-d009288e9094.png",
+      highlight: "Custom Designs",
+      link: "/modular"
     }
   ];
+
+  const handleServiceClick = (link: string) => {
+    navigate(link);
+  };
 
   return (
     <section id="services" className="py-32 bg-white relative overflow-hidden">
@@ -36,18 +46,23 @@ const Services = () => {
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-20 section-animate">
           <h2 className="font-playfair text-6xl font-bold text-navy mb-6">
-            Our <span className="text-gradient-coral">Artistry</span>
+            Our <span className="text-gradient-coral">Services</span>
           </h2>
           <div className="h-1 w-32 bg-coral mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Three pillars of excellence that transform architectural dreams into lived-in poetry. 
-            Each service crafted with the precision of a master, the heart of an artist.
+            Three specialized services that transform your property vision into reality. 
+            Each solution crafted with expertise, precision, and dedication to excellence.
           </p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-12">
           {services.map((service, index) => (
-            <Card key={index} className="section-animate group hover-lift border-0 shadow-2xl overflow-hidden bg-white/90 backdrop-blur" style={{animationDelay: `${index * 0.2}s`}}>
+            <Card 
+              key={index} 
+              className="section-animate group hover-lift border-0 shadow-2xl overflow-hidden bg-white/90 backdrop-blur cursor-pointer" 
+              style={{animationDelay: `${index * 0.2}s`}}
+              onClick={() => handleServiceClick(service.link)}
+            >
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={service.image}
@@ -74,7 +89,7 @@ const Services = () => {
         <div className="text-center mt-20 section-animate">
           <div className="inline-block bg-gradient-to-r from-coral/10 to-navy/10 p-8 rounded-3xl">
             <p className="text-lg text-navy mb-4 font-light">
-              Ready to begin your architectural journey?
+              Ready to begin your construction journey?
             </p>
             <div className="text-coral font-semibold text-xl italic">
               "Every masterpiece starts with a single conversation."
