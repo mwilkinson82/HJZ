@@ -88,7 +88,7 @@ const Credentials = () => {
             >
               <div className="w-12 h-12 bg-coral/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <img 
-                  src="/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
+                  src="/HJZ/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
                   alt="HJZ Construction Logo" 
                   className="w-8 h-8"
                 />

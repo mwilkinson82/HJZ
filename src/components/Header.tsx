@@ -31,7 +31,7 @@ const Header = () => {
           {/* Logo */}
           <div className="group cursor-pointer flex items-center space-x-4" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <img 
-              src="/lovable-uploads/92d1bb29-9817-4f2c-bf06-9516ae063485.png" 
+              src="/HJZ/lovable-uploads/92d1bb29-9817-4f2c-bf06-9516ae063485.png" 
               alt="HJZ Construction Inc" 
               className="h-16 w-auto"
             />
