@@ -22,7 +22,12 @@ const Portfolio = () => {
     "/HJZ/lovable-uploads/928ccc09-cea3-4331-8cfe-0043a87c9b5f.png",
     "/HJZ/lovable-uploads/c6a83e88-8e6a-4c4c-9553-ed1505094acb.png",
     "/HJZ/lovable-uploads/dcc5338f-96b1-4662-ab74-1399dd66baa5.png",
-    "/HJZ/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png"
+    "/HJZ/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png",
+    "/HJZ/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png",
+    "/HJZ/lovable-uploads/89e28b0b-1a9e-4c65-a6aa-90f61831e24d.png",
+    "/HJZ/lovable-uploads/89ea6360-60b9-4667-bb3f-f9a3ed3ce617.png",
+    "/HJZ/lovable-uploads/92d1bb29-9817-4f2c-bf06-9516ae063485.png",
+    "/HJZ/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png"
   ];
 
   const openModal = () => {
@@ -142,7 +147,7 @@ const Portfolio = () => {
             <div className="p-6">
               <div className="flex justify-between items-center mb-6">
                 <h3 className="text-2xl font-playfair font-bold text-navy">
-                  <span className="text-coral">HZ</span> Portfolio
+                  <span className="text-coral">HJZ</span> Portfolio
                 </h3>
                 <button 
                   onClick={closeModal}
