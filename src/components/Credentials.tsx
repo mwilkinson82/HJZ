@@ -1,10 +1,9 @@
-
 import React from 'react';
 
 const Credentials = () => {
   const credentials = [
     {
-      number: "20+",
+      number: "15+",
       text: "Years Mastering",
       subtext: "New England Construction"
     },
@@ -52,7 +51,7 @@ const Credentials = () => {
           </h2>
           <div className="h-1 w-24 bg-coral mx-auto mb-6 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Two decades of crafting dreams into reality across Greater Boston's most exclusive neighborhoods.
+            15+ years of crafting dreams into reality across Greater Boston's most exclusive neighborhoods.
           </p>
         </div>
         

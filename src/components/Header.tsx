@@ -33,7 +33,7 @@ const Header = () => {
             <img 
               src="/HJZ/lovable-uploads/92d1bb29-9817-4f2c-bf06-9516ae063485.png" 
               alt="HJZ Construction Inc" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
           </div>
           

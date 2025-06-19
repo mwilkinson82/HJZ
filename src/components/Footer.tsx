@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -40,7 +39,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-coral rounded-full"></div>
-                <span>20+ Years New England Excellence</span>
+                <span>15+ Years New England Excellence</span>
               </div>
             </div>
           </div>
