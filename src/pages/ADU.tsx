@@ -51,7 +51,7 @@ const ADU = () => {
       {/* Featured ADU Showcase */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16 section-animate">
+          <div className="text-center mb-12 sm:mb-16">
             <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-navy mb-4">
               Our <span className="text-coral">ADU</span> Portfolio
             </h2>
@@ -59,7 +59,7 @@ const ADU = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 section-animate" style={{animationDelay: '0.1s'}}>
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
               <img 
                 src="/HJZ/lovable-uploads/55e1b8cd-a46f-4127-a028-2d128565dbbf.png" 
                 alt="Modern Detached ADU with Contemporary Design" 
@@ -71,7 +71,7 @@ const ADU = () => {
               </div>
             </div>
             
-            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 section-animate" style={{animationDelay: '0.2s'}}>
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
               <img 
                 src="/HJZ/lovable-uploads/928ccc09-cea3-4331-8cfe-0043a87c9b5f.png" 
                 alt="Multi-Level ADU with Natural Materials" 
@@ -83,7 +83,7 @@ const ADU = () => {
               </div>
             </div>
             
-            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 section-animate md:col-span-2 lg:col-span-1" style={{animationDelay: '0.3s'}}>
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 md:col-span-2 lg:col-span-1">
               <img 
                 src="/HJZ/lovable-uploads/c6a83e88-8e6a-4c4c-9553-ed1505094acb.png" 
                 alt="Compact ADU with Outdoor Access" 
@@ -101,7 +101,7 @@ const ADU = () => {
       {/* Why Choose HJZ Section */}
       <section className="py-16 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16 section-animate">
+          <div className="text-center mb-12 sm:mb-16">
             <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-navy mb-4">
               Why Build an ADU with <span className="text-coral">HJZ</span> Construction?
             </h2>
@@ -110,7 +110,7 @@ const ADU = () => {
           
           <div className="grid grid-cols-1 gap-6 sm:gap-8 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start space-x-3 sm:space-x-4 p-4 sm:p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-102 section-animate" style={{animationDelay: `${index * 0.1}s`}}>
+              <div key={index} className="flex items-start space-x-3 sm:space-x-4 p-4 sm:p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-102">
                 <div className="w-3 h-3 bg-coral rounded-full mt-2 flex-shrink-0 animate-pulse"></div>
                 <p className="text-gray-700 text-base sm:text-lg leading-relaxed">{benefit}</p>
               </div>
@@ -122,7 +122,7 @@ const ADU = () => {
       {/* ADU Types Section */}
       <section className="py-16 sm:py-20 bg-gradient-to-r from-coral/5 via-white to-coral/5">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16 section-animate">
+          <div className="text-center mb-12 sm:mb-16">
             <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-navy mb-4">
               ADUs We Specialize In
             </h2>
@@ -131,7 +131,7 @@ const ADU = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {aduTypes.map((type, index) => (
-              <div key={index} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-coral/10 hover:border-coral/20 hover:scale-105 section-animate" style={{animationDelay: `${index * 0.1}s`}}>
+              <div key={index} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-coral/10 hover:border-coral/20 hover:scale-105">
                 <h3 className="font-playfair text-lg sm:text-xl font-bold text-navy mb-4">{type.title}</h3>
                 <p className="text-sm sm:text-base text-gray-600">{type.description}</p>
               </div>
@@ -142,7 +142,7 @@ const ADU = () => {
 
       {/* Financing Section */}
       <section className="py-16 sm:py-20 bg-navy text-white">
-        <div className="container mx-auto px-4 sm:px-6 text-center section-animate">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-playfair text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">
             Need Help With <span className="text-coral">Financing?</span>
           </h2>
@@ -155,7 +155,7 @@ const ADU = () => {
 
       {/* Service Area Section */}
       <section className="py-16 sm:py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 text-center section-animate">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-navy mb-6 sm:mb-8">
             Service Area
           </h2>

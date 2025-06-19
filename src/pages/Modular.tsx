@@ -50,7 +50,7 @@ const Modular = () => {
       {/* Featured Project Showcase */}
       <section className="py-16 sm:py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16 section-animate">
+          <div className="text-center mb-12 sm:mb-16">
             <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-navy mb-4">
               Featured <span className="text-coral">Modular</span> Projects
             </h2>
@@ -58,14 +58,14 @@ const Modular = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
-            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 section-animate">
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
               <img 
                 src="/HJZ/lovable-uploads/dcc5338f-96b1-4662-ab74-1399dd66baa5.png" 
                 alt="Completed Modern Modular Home with Natural Wood and Contemporary Design" 
                 className="w-full h-64 sm:h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
             </div>
-            <div className="space-y-4 sm:space-y-6 section-animate" style={{animationDelay: '0.2s'}}>
+            <div className="space-y-4 sm:space-y-6">
               <h3 className="font-playfair text-2xl sm:text-3xl font-bold text-navy">Modern Luxury Living</h3>
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 This stunning modular home showcases the perfect blend of contemporary design and natural materials. 
@@ -81,7 +81,7 @@ const Modular = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
-            <div className="space-y-4 sm:space-y-6 md:order-2 section-animate" style={{animationDelay: '0.3s'}}>
+            <div className="space-y-4 sm:space-y-6 md:order-2">
               <h3 className="font-playfair text-2xl sm:text-3xl font-bold text-navy">Construction Process</h3>
               <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
                 Our modular construction process ensures precision and quality at every step. From factory-built 
@@ -94,7 +94,7 @@ const Modular = () => {
                 <span className="bg-coral/10 text-coral px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium hover:scale-110 transition-transform duration-200">Weather Protected</span>
               </div>
             </div>
-            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 md:order-1 section-animate" style={{animationDelay: '0.4s'}}>
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 md:order-1">
               <img 
                 src="/HJZ/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png" 
                 alt="Modular Home Construction Process with Crane Installation" 
@@ -108,7 +108,7 @@ const Modular = () => {
       {/* Why Choose Modular Section */}
       <section className="py-16 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16 section-animate">
+          <div className="text-center mb-12 sm:mb-16">
             <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-navy mb-4">
               Why Choose a Modular Home?
             </h2>
@@ -117,7 +117,7 @@ const Modular = () => {
           
           <div className="grid grid-cols-1 gap-6 sm:gap-8 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start space-x-3 sm:space-x-4 p-4 sm:p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-102 section-animate" style={{animationDelay: `${index * 0.1}s`}}>
+              <div key={index} className="flex items-start space-x-3 sm:space-x-4 p-4 sm:p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-102">
                 <div className="w-3 h-3 bg-coral rounded-full mt-2 flex-shrink-0 animate-pulse"></div>
                 <p className="text-gray-700 text-base sm:text-lg leading-relaxed">{benefit}</p>
               </div>
@@ -129,7 +129,7 @@ const Modular = () => {
       {/* Services Section */}
       <section className="py-16 sm:py-20 bg-gradient-to-r from-coral/5 via-white to-coral/5">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16 section-animate">
+          <div className="text-center mb-12 sm:mb-16">
             <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-navy mb-4">
               Modular Services Include
             </h2>
@@ -138,7 +138,7 @@ const Modular = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto">
             {services.map((service, index) => (
-              <div key={index} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-coral/10 hover:scale-105 section-animate" style={{animationDelay: `${index * 0.1}s`}}>
+              <div key={index} className="bg-white p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-coral/10 hover:scale-105">
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="w-3 h-3 bg-coral rounded-full mt-2 flex-shrink-0 animate-pulse"></div>
                   <p className="text-gray-700 text-base sm:text-lg">{service}</p>
@@ -151,7 +151,7 @@ const Modular = () => {
 
       {/* Design Collaboration Section */}
       <section className="py-16 sm:py-20 bg-navy text-white">
-        <div className="container mx-auto px-4 sm:px-6 text-center section-animate">
+        <div className="container mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-playfair text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">
             Design <span className="text-coral">Collaboration</span>
           </h2>
