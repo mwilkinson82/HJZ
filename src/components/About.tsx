@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 
@@ -17,7 +16,7 @@ const About = () => {
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img 
-                  src="/HJZ/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png"
+                  src="/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png"
                   alt="Hayley Zeoli - Founder & Master Builder"
                   className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />

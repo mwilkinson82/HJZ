@@ -60,7 +60,7 @@ const Modular = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center mb-16 sm:mb-20">
             <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
               <img 
-                src="/HJZ/lovable-uploads/dcc5338f-96b1-4662-ab74-1399dd66baa5.png" 
+                src="/lovable-uploads/dcc5338f-96b1-4662-ab74-1399dd66baa5.png" 
                 alt="Completed Modern Modular Home with Natural Wood and Contemporary Design" 
                 className="w-full h-64 sm:h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -96,7 +96,7 @@ const Modular = () => {
             </div>
             <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 md:order-1">
               <img 
-                src="/HJZ/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png" 
+                src="/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png" 
                 alt="Modular Home Construction Process with Crane Installation" 
                 className="w-full h-64 sm:h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />

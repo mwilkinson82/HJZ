@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -61,7 +60,7 @@ const ADU = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
               <img 
-                src="/HJZ/lovable-uploads/55e1b8cd-a46f-4127-a028-2d128565dbbf.png" 
+                src="/lovable-uploads/55e1b8cd-a46f-4127-a028-2d128565dbbf.png" 
                 alt="Modern Detached ADU with Contemporary Design" 
                 className="w-full h-64 sm:h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -73,7 +72,7 @@ const ADU = () => {
             
             <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105">
               <img 
-                src="/HJZ/lovable-uploads/928ccc09-cea3-4331-8cfe-0043a87c9b5f.png" 
+                src="/lovable-uploads/928ccc09-cea3-4331-8cfe-0043a87c9b5f.png" 
                 alt="Multi-Level ADU with Natural Materials" 
                 className="w-full h-64 sm:h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />
@@ -85,7 +84,7 @@ const ADU = () => {
             
             <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 md:col-span-2 lg:col-span-1">
               <img 
-                src="/HJZ/lovable-uploads/c6a83e88-8e6a-4c4c-9553-ed1505094acb.png" 
+                src="/lovable-uploads/c6a83e88-8e6a-4c4c-9553-ed1505094acb.png" 
                 alt="Compact ADU with Outdoor Access" 
                 className="w-full h-64 sm:h-80 object-cover group-hover:scale-110 transition-transform duration-700"
               />

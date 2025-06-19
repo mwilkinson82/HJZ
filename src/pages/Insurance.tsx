@@ -78,7 +78,7 @@ We can have a comprehensive reconstruction plan tailored to your needs, ready wi
             {/* Before Image */}
             <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 hover:scale-105">
               <img 
-                src="/HJZ/lovable-uploads/89ea6360-60b9-4667-bb3f-f9a3ed3ce617.png"
+                src="/lovable-uploads/89ea6360-60b9-4667-bb3f-f9a3ed3ce617.png"
                 alt="Property damage requiring insurance claim restoration"
                 className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
               />
@@ -94,7 +94,7 @@ We can have a comprehensive reconstruction plan tailored to your needs, ready wi
             {/* After Image */}
             <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 hover:scale-105">
               <img 
-                src="/HJZ/lovable-uploads/89e28b0b-1a9e-4c65-a6aa-90f61831e24d.png"
+                src="/lovable-uploads/89e28b0b-1a9e-4c65-a6aa-90f61831e24d.png"
                 alt="Beautifully restored kitchen after insurance claim completion"
                 className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
               />

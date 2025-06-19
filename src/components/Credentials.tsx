@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Credentials = () => {
@@ -92,7 +91,7 @@ const Credentials = () => {
               
               <div className="w-12 sm:w-16 h-12 sm:h-16 bg-gradient-to-br from-coral/20 to-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 border-2 border-yellow-400/30 shadow-lg">
                 <img 
-                  src="/HJZ/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
+                  src="/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
                   alt="HJZ Construction Logo" 
                   className="w-8 sm:w-10 h-8 sm:h-10"
                 />

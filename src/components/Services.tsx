@@ -11,7 +11,7 @@ const Services = () => {
       title: "Accessory Dwelling Units",
       subtitle: "Build Smart. Live Free.",
       description: "From detached cottages to garage conversions, we deliver turnkey ADU solutions designed for your goals and your lot. Navigate Massachusetts zoning laws with confidence.",
-      image: "/HJZ/lovable-uploads/29347f05-ef4e-496c-b73d-dfe9c1c72011.png",
+      image: "/lovable-uploads/29347f05-ef4e-496c-b73d-dfe9c1c72011.png",
       highlight: "Design-Build Experts",
       link: "/adu"
     },
@@ -19,7 +19,7 @@ const Services = () => {
       title: "Insurance Claims",
       subtitle: "Rebuilding Lives, Restoring Homes",
       description: "Decades of experience in construction and insurance claims enable us to assess and articulate damage details like no other contractor. We work directly with your insurance company.",
-      image: "/HJZ/lovable-uploads/df2bc432-bb84-42ff-a81b-74019da44bec.png",
+      image: "/lovable-uploads/df2bc432-bb84-42ff-a81b-74019da44bec.png",
       highlight: "Claims Specialists",
       link: "/insurance"
     },
@@ -27,7 +27,7 @@ const Services = () => {
       title: "Modular Homes",
       subtitle: "Smarter. Faster.",
       description: "Custom modular home solutions designed to save time, control costs, and deliver exceptional quality. Factory-built precision meets New England living.",
-      image: "/HJZ/lovable-uploads/6e8b79f0-0777-40e2-993f-a22a0d57d440.png",
+      image: "/lovable-uploads/6e8b79f0-0777-40e2-993f-a22a0d57d440.png",
       highlight: "Custom Designs",
       link: "/modular"
     }

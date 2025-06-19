@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -6,28 +5,28 @@ const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const projects = [
-    "/HJZ/lovable-uploads/b78d37cb-af1c-448a-b894-d009288e9094.png",
-    "/HJZ/lovable-uploads/1d488505-e6c3-4c7e-a611-c8e7512fdc83.png", 
-    "/HJZ/lovable-uploads/91feba13-e2cc-4db2-a9ec-00666c8161c8.png",
-    "/HJZ/lovable-uploads/df2bc432-bb84-42ff-a81b-74019da44bec.png",
-    "/HJZ/lovable-uploads/2ef3245d-28ef-4a2e-88c2-a722d99a1381.png",
-    "/HJZ/lovable-uploads/21fd4a4e-f031-4029-9dc5-c7839afc8b32.png",
-    "/HJZ/lovable-uploads/2c421101-d6a9-48a9-8068-3c6cff9e7340.png",
-    "/HJZ/lovable-uploads/2ec45492-974b-4f84-954d-1bf6d6ce566d.png",
-    "/HJZ/lovable-uploads/21025a41-6a90-4047-b533-c1af8d850ecf.png",
-    "/HJZ/lovable-uploads/aafb29c2-abf7-4529-8056-52b100904a3d.png",
-    "/HJZ/lovable-uploads/6e8b79f0-0777-40e2-993f-a22a0d57d440.png",
-    "/HJZ/lovable-uploads/29347f05-ef4e-496c-b73d-dfe9c1c72011.png",
-    "/HJZ/lovable-uploads/55e1b8cd-a46f-4127-a028-2d128565dbbf.png",
-    "/HJZ/lovable-uploads/928ccc09-cea3-4331-8cfe-0043a87c9b5f.png",
-    "/HJZ/lovable-uploads/c6a83e88-8e6a-4c4c-9553-ed1505094acb.png",
-    "/HJZ/lovable-uploads/dcc5338f-96b1-4662-ab74-1399dd66baa5.png",
-    "/HJZ/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png",
-    "/HJZ/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png",
-    "/HJZ/lovable-uploads/89e28b0b-1a9e-4c65-a6aa-90f61831e24d.png",
-    "/HJZ/lovable-uploads/89ea6360-60b9-4667-bb3f-f9a3ed3ce617.png",
-    "/HJZ/lovable-uploads/92d1bb29-9817-4f2c-bf06-9516ae063485.png",
-    "/HJZ/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png"
+    "/lovable-uploads/b78d37cb-af1c-448a-b894-d009288e9094.png",
+    "/lovable-uploads/1d488505-e6c3-4c7e-a611-c8e7512fdc83.png", 
+    "/lovable-uploads/91feba13-e2cc-4db2-a9ec-00666c8161c8.png",
+    "/lovable-uploads/df2bc432-bb84-42ff-a81b-74019da44bec.png",
+    "/lovable-uploads/2ef3245d-28ef-4a2e-88c2-a722d99a1381.png",
+    "/lovable-uploads/21fd4a4e-f031-4029-9dc5-c7839afc8b32.png",
+    "/lovable-uploads/2c421101-d6a9-48a9-8068-3c6cff9e7340.png",
+    "/lovable-uploads/2ec45492-974b-4f84-954d-1bf6d6ce566d.png",
+    "/lovable-uploads/21025a41-6a90-4047-b533-c1af8d850ecf.png",
+    "/lovable-uploads/aafb29c2-abf7-4529-8056-52b100904a3d.png",
+    "/lovable-uploads/6e8b79f0-0777-40e2-993f-a22a0d57d440.png",
+    "/lovable-uploads/29347f05-ef4e-496c-b73d-dfe9c1c72011.png",
+    "/lovable-uploads/55e1b8cd-a46f-4127-a028-2d128565dbbf.png",
+    "/lovable-uploads/928ccc09-cea3-4331-8cfe-0043a87c9b5f.png",
+    "/lovable-uploads/c6a83e88-8e6a-4c4c-9553-ed1505094acb.png",
+    "/lovable-uploads/dcc5338f-96b1-4662-ab74-1399dd66baa5.png",
+    "/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png",
+    "/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png",
+    "/lovable-uploads/89e28b0b-1a9e-4c65-a6aa-90f61831e24d.png",
+    "/lovable-uploads/89ea6360-60b9-4667-bb3f-f9a3ed3ce617.png",
+    "/lovable-uploads/92d1bb29-9817-4f2c-bf06-9516ae063485.png",
+    "/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png"
   ];
 
   const openModal = () => {

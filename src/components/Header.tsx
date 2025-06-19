@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -89,7 +90,7 @@ const Header = () => {
           {/* Logo with Text */}
           <div className="group cursor-pointer flex items-center space-x-3" onClick={navigateToHome}>
             <img 
-              src="/HJZ/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
+              src="/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
               alt="HJZ Construction Logo" 
               className="h-16 w-auto"
             />
