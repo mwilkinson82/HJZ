@@ -15,7 +15,8 @@ const Portfolio = () => {
     "/HJZ/lovable-uploads/2c421101-d6a9-48a9-8068-3c6cff9e7340.png",
     "/HJZ/lovable-uploads/2ec45492-974b-4f84-954d-1bf6d6ce566d.png",
     "/HJZ/lovable-uploads/21025a41-6a90-4047-b533-c1af8d850ecf.png",
-    "/HJZ/lovable-uploads/aafb29c2-abf7-4529-8056-52b100904a3d.png"
+    "/HJZ/lovable-uploads/aafb29c2-abf7-4529-8056-52b100904a3d.png",
+    "/HJZ/lovable-uploads/6e8b79f0-0777-40e2-993f-a22a0d57d440.png"
   ];
 
   const openModal = () => {
@@ -42,7 +43,7 @@ const Portfolio = () => {
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {projects.map((image, index) => (
+          {projects.slice(0, 9).map((image, index) => (
             <div 
               key={index}
               className={`section-animate relative group cursor-pointer ${
@@ -55,6 +56,27 @@ const Portfolio = () => {
                 <img 
                   src={image}
                   alt={`HJZ Construction Project ${index + 1}`}
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* Last row with 2 centered images */}
+        <div className="flex justify-center gap-8 mb-12">
+          {projects.slice(9).map((image, index) => (
+            <div 
+              key={index + 9}
+              className="section-animate relative group cursor-pointer w-full max-w-sm"
+              style={{animationDelay: `${(index + 9) * 0.1}s`}}
+              onClick={() => setSelectedImage(image)}
+            >
+              <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 bg-white">
+                <img 
+                  src={image}
+                  alt={`HJZ Construction Project ${index + 10}`}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

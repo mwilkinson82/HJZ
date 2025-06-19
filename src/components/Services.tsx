@@ -27,7 +27,7 @@ const Services = () => {
       title: "Modular Homes",
       subtitle: "Smarter. Faster.",
       description: "Custom modular home solutions designed to save time, control costs, and deliver exceptional quality. Factory-built precision meets New England living.",
-      image: "/HJZ/lovable-uploads/b78d37cb-af1c-448a-b894-d009288e9094.png",
+      image: "/HJZ/lovable-uploads/6e8b79f0-0777-40e2-993f-a22a0d57d440.png",
       highlight: "Custom Designs",
       link: "/modular"
     }
