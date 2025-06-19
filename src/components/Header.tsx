@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -18,55 +17,67 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    // Close mobile menu first
+    setIsMobileMenuOpen(false);
+    
     // If we're not on the home page, navigate there first
     if (location.pathname !== '/') {
       navigate('/');
       // Wait for navigation to complete, then scroll
       setTimeout(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         const element = document.getElementById(sectionId);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
       }, 100);
     } else {
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
-    setIsMobileMenuOpen(false);
   };
 
   const navigateToGuides = () => {
-    navigate('/guides');
-    window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
+    navigate('/guides');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
   };
 
   const navigateToADU = () => {
-    navigate('/adu');
-    window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
+    navigate('/adu');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
   };
 
   const navigateToInsurance = () => {
-    navigate('/insurance');
-    window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
+    navigate('/insurance');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
   };
 
   const navigateToModular = () => {
-    navigate('/modular');
-    window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
+    navigate('/modular');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
   };
 
   const navigateToHome = () => {
-    navigate('/');
-    window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
+    navigate('/');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
   };
 
   return (
