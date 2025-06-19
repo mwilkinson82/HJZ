@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
@@ -27,12 +26,33 @@ const ContactModal: React.FC<ContactModalProps> = ({
     budget: '',
     details: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Thank you for reaching out! Hayley will personally review your inquiry and respond within 24 hours.");
-    setFormData({ name: '', email: '', phone: '', projectType: '', budget: '', details: '' });
-    onClose();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xdkzlkwq', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success("Thank you for reaching out! Hayley will personally review your inquiry and respond within 24 hours.");
+        setFormData({ name: '', email: '', phone: '', projectType: '', budget: '', details: '' });
+        onClose();
+      } else {
+        toast.error("There was an issue sending your message. Please try again or call Hayley directly at (617) 680-6716.");
+      }
+    } catch (error) {
+      toast.error("There was an issue sending your message. Please try again or call Hayley directly at (617) 680-6716.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -159,9 +179,10 @@ const ContactModal: React.FC<ContactModalProps> = ({
           <Button 
             type="submit"
             size="lg"
-            className="w-full bg-coral hover:bg-coral/90 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            disabled={isSubmitting}
+            className="w-full bg-coral hover:bg-coral/90 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
           >
-            Begin Our Conversation
+            {isSubmitting ? 'Sending...' : 'Begin Our Conversation'}
           </Button>
         </form>
       </DialogContent>
