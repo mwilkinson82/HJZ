@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card } from '@/components/ui/card';
 
@@ -17,7 +18,6 @@ const About = () => {
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img 
                   src="/HJZ/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png"
-
                   alt="Hayley Zeoli - Founder & Master Builder"
                   className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -27,16 +27,16 @@ const About = () => {
               {/* Floating Badge */}
               <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-coral/20">
                 <div className="text-center">
-                  <div className="text-coral text-2xl font-bold">15+</div>
+                  <div className="text-coral text-2xl font-bold">20+</div>
                   <div className="text-navy text-sm font-medium">Years Mastery</div>
                 </div>
               </div>
               
-              {/* Woman-Owned Badge */}
-              <div className="absolute -top-6 -left-6 bg-coral text-white px-6 py-3 rounded-full shadow-lg transform -rotate-3">
+              {/* Premium Woman-Owned Badge */}
+              <div className="absolute -top-6 -left-6 bg-gradient-to-r from-coral to-coral-600 text-white px-6 py-3 rounded-full shadow-xl transform -rotate-3 border-2 border-yellow-400/30">
                 <div className="text-center">
-                  <div className="text-sm font-bold">Woman-Owned</div>
-                  <div className="text-xs opacity-90">& Proud</div>
+                  <div className="text-sm font-bold drop-shadow">Woman-Owned</div>
+                  <div className="text-xs opacity-90 drop-shadow">& Proud</div>
                 </div>
               </div>
             </div>
@@ -59,6 +59,9 @@ const About = () => {
                 </span>
                 <span className="text-gradient-coral block">Hayley Zeoli</span>
               </h2>
+              <div className="text-coral text-xl font-medium mb-6 font-playfair">
+                Master Designer & Builder, CEO
+              </div>
               <div className="h-1 w-24 bg-coral rounded-full mb-8"></div>
             </div>
             
@@ -68,7 +71,7 @@ const About = () => {
               </p>
               
               <p className="text-gray-700">
-                For the past fifteen years, I've been the trusted confidante of New England's most discerning families, 
+                For the past twenty years, I've been the trusted confidante of New England's most discerning families, 
                 transforming their deepest aspirations into architectural poetry. As a woman in a traditionally 
                 male-dominated field, I bring an intuitive understanding of how families truly live, love, and create memories.
               </p>
@@ -99,7 +102,7 @@ const About = () => {
             {/* Personal Touch Quote */}
             <div className="bg-navy/5 p-8 rounded-2xl border-l-4 border-coral">
               <p className="text-navy italic text-lg font-light">
-                "When you choose HJZ Management, you're not just hiring a builder—you're partnering with 
+                "When you choose HJZ Construction, you're not just hiring a builder—you're partnering with 
                 someone who will guard your vision as fiercely as their own reputation."
               </p>
               <div className="mt-4 text-coral font-semibold">— Hayley Zeoli</div>

@@ -78,23 +78,30 @@ const Credentials = () => {
           ))}
         </div>
 
-        {/* Certifications Section */}
+        {/* Premium Certifications Section */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {certifications.map((cert, index) => (
             <div 
               key={index}
-              className="bg-white p-6 rounded-xl shadow-lg border border-coral/10 text-center section-animate"
+              className="bg-gradient-to-br from-white via-white to-yellow-50/30 p-8 rounded-xl shadow-xl border-2 border-yellow-400/40 text-center section-animate transform hover:scale-105 transition-all duration-500 hover:shadow-2xl relative overflow-hidden"
               style={{animationDelay: `${(index + 4) * 0.1}s`}}
             >
-              <div className="w-12 h-12 bg-coral/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              {/* Premium Gold Accent */}
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 to-yellow-600"></div>
+              <div className="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-yellow-400 to-yellow-600"></div>
+              
+              <div className="w-16 h-16 bg-gradient-to-br from-coral/20 to-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6 border-2 border-yellow-400/30 shadow-lg">
                 <img 
                   src="/HJZ/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
                   alt="HJZ Construction Logo" 
-                  className="w-8 h-8"
+                  className="w-10 h-10"
                 />
               </div>
-              <h3 className="font-semibold text-navy mb-2">{cert.title}</h3>
-              <p className="text-sm text-gray-600">{cert.description}</p>
+              <h3 className="font-semibold text-navy mb-3 text-lg font-playfair">{cert.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{cert.description}</p>
+              
+              {/* Premium Badge Corner */}
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full border-2 border-white shadow-lg"></div>
             </div>
           ))}
         </div>

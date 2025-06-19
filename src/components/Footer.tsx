@@ -22,7 +22,7 @@ const Footer = () => {
                 Hayley Zeoli
               </div>
               <div className="text-lg text-gray-300 font-light">
-                HJZ Management
+                HJZ Construction Inc.
               </div> 
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -87,13 +87,13 @@ const Footer = () => {
               <div>
                 <div className="font-medium mb-1">Direct Line</div>
                 <div className="text-white hover:text-coral transition-colors cursor-pointer">
-                  (617) 555-0123
+                  (617) 680-6716
                 </div>
               </div>
               <div>
                 <div className="font-medium mb-1">Email Hayley</div> 
                 <div className="text-white hover:text-coral transition-colors cursor-pointer">
-                  hayley@hjzmanagement.com
+                  info.hjzmgmt@gmail.com
                 </div>
               </div>
               <div className="pt-2">
@@ -110,7 +110,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <div className="mb-4 md:mb-0">
-            © 2025 HJZ Management & Hayley Zeoli. All rights reserved.
+            © 2025 HJZ Construction Inc. & Hayley Zeoli. All rights reserved.
           </div>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-coral transition-colors">Privacy Policy</a>
