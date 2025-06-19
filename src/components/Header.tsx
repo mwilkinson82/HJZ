@@ -61,6 +61,12 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const navigateToHome = () => {
+    navigate('/');
+    window.scrollTo(0, 0);
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
       isScrolled ? 'bg-white/95 backdrop-blur-xl shadow-xl border-b border-coral/20' : 'bg-black/20 backdrop-blur-md'
@@ -68,7 +74,7 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-24">
           {/* Logo with Text */}
-          <div className="group cursor-pointer flex items-center space-x-3" onClick={() => navigate('/')}>
+          <div className="group cursor-pointer flex items-center space-x-3" onClick={navigateToHome}>
             <img 
               src="/HJZ/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
               alt="HJZ Construction Logo" 
