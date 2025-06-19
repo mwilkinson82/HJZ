@@ -35,6 +35,9 @@ const Services = () => {
 
   const handleServiceClick = (link: string) => {
     navigate(link);
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
   };
 
   return (
