@@ -1,8 +1,11 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import ContactModal from '@/components/ContactModal';
 
 const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -51,7 +54,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center animate-fade-in-up px-2" style={{animationDelay: '0.7s'}}>
               <Button 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => setIsModalOpen(true)}
                 size="lg"
                 className="group bg-coral hover:bg-coral-600 text-white font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-lg rounded-full shadow-2xl hover:shadow-coral/25 transition-all duration-500 hover:scale-105 w-full sm:w-auto"
               >
@@ -77,6 +80,13 @@ const Hero = () => {
           <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
+
+      <ContactModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Start Your Dream Home Journey"
+        description="Share your vision with us and let's begin creating your forever home."
+      />
     </section>
   );
 };
