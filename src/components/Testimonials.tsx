@@ -8,39 +8,46 @@ const Testimonials = () => {
 
   const googleReviews = [
     {
-      name: "Sarah Johnson",
-      text: "HJZ Construction exceeded our expectations! They transformed our basement into a beautiful ADU that's now generating rental income. Professional, timely, and incredible attention to detail.",
+      name: "Courtney Drake",
+      text: "We loved working with HJZ Construction on our kitchen and bathroom renovation. Hayley's communication and project management was exceptional. She made the process stress-free. We finished the project a month ahead of schedule and on budget.",
       rating: 5,
-      date: "2 weeks ago",
+      date: "a month ago",
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=80&h=80&fit=crop&crop=face&auto=format"
     },
     {
-      name: "Michael Chen",
-      text: "After our insurance claim, HJZ rebuilt our kitchen better than it was before. The team was professional, communicated clearly throughout the process, and finished on schedule.",
+      name: "Laura Goodbody",
+      text: "Hayley and her team are a true pleasure to work with. The attention to detail, communication with clients, and true care Hayley puts into her projects is outstanding. She helped us create a bathroom of our dreams!",
       rating: 5,
-      date: "1 month ago",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face&auto=format"
-    },
-    {
-      name: "Emily Rodriguez",
-      text: "Our custom home build with HJZ was a dream come true. They listened to our vision and delivered beyond what we imagined. Highly recommend for anyone looking for quality craftsmanship!",
-      rating: 5,
-      date: "2 months ago",
+      date: "a month ago",
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face&auto=format"
     },
     {
-      name: "David Thompson",
-      text: "The modular home installation was seamless. HJZ handled everything from permits to final walkthrough. Great communication and quality work throughout the entire project.",
+      name: "Mercedes Lopez",
+      text: "The quality of the finished renovation is excellent. Also excellent were the timelines of completion, the care put in incorporating the details of our vision, and the continuous flow in communicating updates. I highly recommend HJZ Construction.",
       rating: 5,
-      date: "3 months ago",
+      date: "a month ago",
+      avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=80&h=80&fit=crop&crop=face&auto=format"
+    },
+    {
+      name: "Leonard DiPietro",
+      text: "Hayley was incredible. She was understanding of my situation, responsive to my questions and requests and her company was great in refurbing my damaged condo. I highly recommend them. I couldn't be happier with the completed product!",
+      rating: 5,
+      date: "a month ago",
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face&auto=format"
     },
     {
-      name: "Lisa Park",
-      text: "HJZ Construction handled our whole house renovation with professionalism and skill. Every detail was perfect, and they stayed within our budget and timeline. Couldn't be happier!",
+      name: "Brenda Gallagher",
+      text: "A year ago, a tornado caused damage to our home. HJZ Construction came the next day and walked us through the process. Hayley was attentive, organized and has a skilled team. Looking back at the work completed we are so proud of the quality of the workmanship.",
       rating: 5,
-      date: "4 months ago",
-      avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=80&h=80&fit=crop&crop=face&auto=format"
+      date: "8 months ago",
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face&auto=format"
+    },
+    {
+      name: "Lisa O'Rourke",
+      text: "I had hired Hayley to help us design and build an ADU. From the very beginning, we knew that we had made the best decision. Her attention to detail and follow up gave us the peace of mind to know that we were going to be 100% satisfied with the end result.",
+      rating: 5,
+      date: "3 months ago",
+      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=80&h=80&fit=crop&crop=face&auto=format"
     }
   ];
 
@@ -74,7 +81,7 @@ const Testimonials = () => {
                   G
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-navy mb-1">4.9</div>
+                  <div className="text-3xl font-bold text-navy mb-1">5.0</div>
                   <div className="flex space-x-1 mb-2">
                     {[...Array(5)].map((_, i) => (
                       <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
@@ -89,7 +96,7 @@ const Testimonials = () => {
               <div className="text-center">
                 <div className="flex items-center space-x-2 mb-2">
                   <Users className="w-5 h-5 text-coral" />
-                  <span className="text-lg font-semibold text-navy">50+ Happy Clients</span>
+                  <span className="text-lg font-semibold text-navy">10 Happy Clients</span>
                 </div>
                 <Button 
                   variant="outline" 
