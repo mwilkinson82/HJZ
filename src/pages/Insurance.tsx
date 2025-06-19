@@ -75,19 +75,19 @@ We can have a comprehensive reconstruction plan tailored to your needs, ready wi
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto">
             {/* Before Image */}
             <div className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-700 hover:scale-105">
               <img 
                 src="/HJZ/lovable-uploads/89ea6360-60b9-4667-bb3f-f9a3ed3ce617.png"
                 alt="Property damage requiring insurance claim restoration"
-                className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-red-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/95 backdrop-blur-sm p-4 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 className="font-playfair text-xl font-bold text-navy mb-2">The Challenge</h3>
-                  <p className="text-gray-700 text-sm">Water damage requiring comprehensive restoration and insurance coordination.</p>
+                <div className="bg-coral backdrop-blur-sm p-4 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  <h3 className="font-playfair text-xl font-bold text-white mb-2">The Challenge</h3>
+                  <p className="text-white text-sm">Water damage requiring comprehensive restoration and insurance coordination.</p>
                 </div>
               </div>
             </div>
@@ -97,13 +97,13 @@ We can have a comprehensive reconstruction plan tailored to your needs, ready wi
               <img 
                 src="/HJZ/lovable-uploads/89e28b0b-1a9e-4c65-a6aa-90f61831e24d.png"
                 alt="Beautifully restored kitchen after insurance claim completion"
-                className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-6 left-6 right-6">
-                <div className="bg-white/95 backdrop-blur-sm p-4 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                  <h3 className="font-playfair text-xl font-bold text-navy mb-2">The Result</h3>
-                  <p className="text-gray-700 text-sm">A stunning modern kitchen that exceeds the original, fully covered by insurance.</p>
+                <div className="bg-coral backdrop-blur-sm p-4 rounded-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  <h3 className="font-playfair text-xl font-bold text-white mb-2">The Result</h3>
+                  <p className="text-white text-sm">A stunning modern kitchen that exceeds the original, fully covered by insurance.</p>
                 </div>
               </div>
             </div>
