@@ -21,6 +21,11 @@ const Header = () => {
     }
   };
 
+  const navigateToGuides = () => {
+    window.location.href = '/HJZ/guides';
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
       isScrolled ? 'bg-white/95 backdrop-blur-xl shadow-xl border-b border-coral/20' : 'bg-black/20 backdrop-blur-md'
@@ -70,6 +75,15 @@ const Header = () => {
               }`}
             >
               <span>Portfolio</span>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-coral transition-all duration-300 group-hover:w-full"></div>
+            </button>
+            <button 
+              onClick={navigateToGuides}
+              className={`hover:text-coral transition-all duration-300 font-medium relative group py-2 ${
+                isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'
+              }`}
+            >
+              <span>Guides</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-coral transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button 
@@ -131,6 +145,12 @@ const Header = () => {
                 className="text-left text-gray-700 hover:text-coral transition-colors font-medium px-6 py-3 rounded-lg hover:bg-coral/5"
               >
                 Portfolio
+              </button>
+              <button 
+                onClick={navigateToGuides}
+                className="text-left text-gray-700 hover:text-coral transition-colors font-medium px-6 py-3 rounded-lg hover:bg-coral/5"
+              >
+                Guides
               </button>
               <button 
                 onClick={() => scrollToSection('testimonials')}
