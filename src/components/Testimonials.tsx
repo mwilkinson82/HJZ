@@ -12,42 +12,70 @@ const Testimonials = () => {
       text: "We loved working with HJZ Construction on our kitchen and bathroom renovation. Hayley's communication and project management was exceptional. She made the process stress-free. We finished the project a month ahead of schedule and on budget.",
       rating: 5,
       date: "a month ago",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=80&h=80&fit=crop&crop=face&auto=format"
+      initials: "CD"
     },
     {
       name: "Laura Goodbody",
       text: "Hayley and her team are a true pleasure to work with. The attention to detail, communication with clients, and true care Hayley puts into her projects is outstanding. She helped us create a bathroom of our dreams!",
       rating: 5,
       date: "a month ago",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face&auto=format"
+      initials: "LG"
     },
     {
       name: "Mercedes Lopez",
       text: "The quality of the finished renovation is excellent. Also excellent were the timelines of completion, the care put in incorporating the details of our vision, and the continuous flow in communicating updates. I highly recommend HJZ Construction.",
       rating: 5,
       date: "a month ago",
-      avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=80&h=80&fit=crop&crop=face&auto=format"
+      initials: "ML"
     },
     {
       name: "Leonard DiPietro",
       text: "Hayley was incredible. She was understanding of my situation, responsive to my questions and requests and her company was great in refurbing my damaged condo. I highly recommend them. I couldn't be happier with the completed product!",
       rating: 5,
       date: "a month ago",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face&auto=format"
+      initials: "LD"
+    },
+    {
+      name: "Yulieth Ramos",
+      text: "We absolutely loved working with HJZ Construction & Management. They did an outstanding job from start to finish! Communication was excellent throughout the entire project, and they consistently showed care and consideration for our building.",
+      rating: 5,
+      date: "a month ago",
+      initials: "YR"
+    },
+    {
+      name: "Sasha Serdiuk-Weles Wood Floors",
+      text: "I've been working with Hayley for over 3 years now and can't say nothing but positive experience! Jobs are always well organized, trades are happy and clients are always thrilled by the results of Hayley's attention to details and communication!",
+      rating: 5,
+      date: "8 months ago",
+      initials: "SS"
     },
     {
       name: "Brenda Gallagher",
       text: "A year ago, a tornado caused damage to our home. HJZ Construction came the next day and walked us through the process. Hayley was attentive, organized and has a skilled team. Looking back at the work completed we are so proud of the quality of the workmanship.",
       rating: 5,
       date: "8 months ago",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face&auto=format"
+      initials: "BG"
     },
     {
       name: "Lisa O'Rourke",
       text: "I had hired Hayley to help us design and build an ADU. From the very beginning, we knew that we had made the best decision. Her attention to detail and follow up gave us the peace of mind to know that we were going to be 100% satisfied with the end result.",
       rating: 5,
       date: "3 months ago",
-      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=80&h=80&fit=crop&crop=face&auto=format"
+      initials: "LO"
+    },
+    {
+      name: "Emily Elliott",
+      text: "Hayley and her team were outstanding! I've used them on multiple projects and they are always fast, attentive & professional. I highly recommend this company and will definitely be using them again!",
+      rating: 5,
+      date: "2 years ago",
+      initials: "EE"
+    },
+    {
+      name: "Chris Sheehan",
+      text: "I had this company build out a new 750 sf office in our warehouse. The company was reasonable on pricing, efficient and easy to work with. I would highly recommend!",
+      rating: 5,
+      date: "2 years ago",
+      initials: "CS"
     }
   ];
 
@@ -63,7 +91,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section id="testimonials" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-96 h-96 bg-coral/5 rounded-full blur-3xl animate-pulse"></div>
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16 section-animate">
@@ -116,13 +144,11 @@ const Testimonials = () => {
             <div className="absolute top-6 left-6 text-6xl text-coral/20 font-playfair">"</div>
             
             <div className="relative z-10">
-              {/* Profile Picture and Rating */}
+              {/* Profile Initials and Rating */}
               <div className="flex flex-col items-center mb-6">
-                <img 
-                  src={googleReviews[currentTestimonial].avatar}
-                  alt={googleReviews[currentTestimonial].name}
-                  className="w-20 h-20 rounded-full object-cover border-4 border-coral/20 mb-4 shadow-lg"
-                />
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-coral to-coral/80 flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-lg">
+                  {googleReviews[currentTestimonial].initials}
+                </div>
                 <div className="flex space-x-1">
                   {[...Array(googleReviews[currentTestimonial].rating)].map((_, i) => (
                     <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
