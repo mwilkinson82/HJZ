@@ -16,7 +16,13 @@ const Portfolio = () => {
     "/HJZ/lovable-uploads/2ec45492-974b-4f84-954d-1bf6d6ce566d.png",
     "/HJZ/lovable-uploads/21025a41-6a90-4047-b533-c1af8d850ecf.png",
     "/HJZ/lovable-uploads/aafb29c2-abf7-4529-8056-52b100904a3d.png",
-    "/HJZ/lovable-uploads/6e8b79f0-0777-40e2-993f-a22a0d57d440.png"
+    "/HJZ/lovable-uploads/6e8b79f0-0777-40e2-993f-a22a0d57d440.png",
+    "/HJZ/lovable-uploads/29347f05-ef4e-496c-b73d-dfe9c1c72011.png",
+    "/HJZ/lovable-uploads/55e1b8cd-a46f-4127-a028-2d128565dbbf.png",
+    "/HJZ/lovable-uploads/928ccc09-cea3-4331-8cfe-0043a87c9b5f.png",
+    "/HJZ/lovable-uploads/c6a83e88-8e6a-4c4c-9553-ed1505094acb.png",
+    "/HJZ/lovable-uploads/dcc5338f-96b1-4662-ab74-1399dd66baa5.png",
+    "/HJZ/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png"
   ];
 
   const openModal = () => {
@@ -66,7 +72,7 @@ const Portfolio = () => {
         
         {/* Last row with 2 centered images */}
         <div className="flex justify-center gap-8 mb-12">
-          {projects.slice(9).map((image, index) => (
+          {projects.slice(9, 11).map((image, index) => (
             <div 
               key={index + 9}
               className="section-animate relative group cursor-pointer w-full max-w-sm"
@@ -135,7 +141,9 @@ const Portfolio = () => {
           <div className="relative max-w-6xl max-h-[90vh] w-full bg-white rounded-lg overflow-hidden">
             <div className="p-6">
               <div className="flex justify-between items-center mb-6">
-                <h3 className="text-2xl font-playfair font-bold text-navy">Our Complete Portfolio</h3>
+                <h3 className="text-2xl font-playfair font-bold text-navy">
+                  <span className="text-coral">HZ</span> Portfolio
+                </h3>
                 <button 
                   onClick={closeModal}
                   className="text-gray-400 hover:text-gray-600 text-2xl"
