@@ -28,13 +28,25 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-24">
-          {/* Logo */}
-          <div className="group cursor-pointer flex items-center space-x-4" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          {/* Logo with Text */}
+          <div className="group cursor-pointer flex items-center space-x-3" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <img 
-              src="/HJZ/lovable-uploads/92d1bb29-9817-4f2c-bf06-9516ae063485.png" 
-              alt="HJZ Construction Inc" 
-              className="h-20 w-auto"
+              src="/HJZ/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
+              alt="HJZ Construction Logo" 
+              className="h-16 w-auto"
             />
+            <div className="flex flex-col">
+              <span className={`font-playfair text-2xl font-bold transition-colors duration-300 ${
+                isScrolled ? 'text-navy' : 'text-white drop-shadow-lg'
+              }`}>
+                HJZ Construction
+              </span>
+              <span className={`text-sm font-light transition-colors duration-300 ${
+                isScrolled ? 'text-gray-600' : 'text-white/90 drop-shadow-md'
+              }`}>
+                Inc.
+              </span>
+            </div>
           </div>
           
           {/* Desktop Navigation */}
