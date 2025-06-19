@@ -48,19 +48,69 @@ const ADU = () => {
         </div>
       </section>
 
-      {/* Why Choose HJZ Section */}
+      {/* Featured ADU Showcase */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-playfair text-4xl font-bold text-navy mb-4">
-              Why Build an ADU with HJZ Construction?
+              Our <span className="text-coral">ADU</span> Portfolio
+            </h2>
+            <div className="h-1 w-24 bg-coral mx-auto rounded-full"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
+              <img 
+                src="/HJZ/lovable-uploads/55e1b8cd-a46f-4127-a028-2d128565dbbf.png" 
+                alt="Modern Detached ADU with Contemporary Design" 
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="p-6 bg-white">
+                <h3 className="font-playfair text-xl font-bold text-navy mb-2">Modern Detached ADU</h3>
+                <p className="text-gray-600">Contemporary design with elevated living space and integrated garage</p>
+              </div>
+            </div>
+            
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
+              <img 
+                src="/HJZ/lovable-uploads/928ccc09-cea3-4331-8cfe-0043a87c9b5f.png" 
+                alt="Multi-Level ADU with Natural Materials" 
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="p-6 bg-white">
+                <h3 className="font-playfair text-xl font-bold text-navy mb-2">Multi-Level ADU</h3>
+                <p className="text-gray-600">Natural materials blend seamlessly with modern architectural elements</p>
+              </div>
+            </div>
+            
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 md:col-span-2 lg:col-span-1">
+              <img 
+                src="/HJZ/lovable-uploads/c6a83e88-8e6a-4c4c-9553-ed1505094acb.png" 
+                alt="Compact ADU with Outdoor Access" 
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="p-6 bg-white">
+                <h3 className="font-playfair text-xl font-bold text-navy mb-2">Compact Efficient ADU</h3>
+                <p className="text-gray-600">Maximizing space efficiency with thoughtful design and outdoor integration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose HJZ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-4xl font-bold text-navy mb-4">
+              Why Build an ADU with <span className="text-coral">HJZ</span> Construction?
             </h2>
             <div className="h-1 w-24 bg-coral mx-auto rounded-full"></div>
           </div>
           
           <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+              <div key={index} className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="w-3 h-3 bg-coral rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-700 text-lg leading-relaxed">{benefit}</p>
               </div>
@@ -81,7 +131,7 @@ const ADU = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {aduTypes.map((type, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-coral/10">
+              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-coral/10 hover:border-coral/20">
                 <h3 className="font-playfair text-xl font-bold text-navy mb-4">{type.title}</h3>
                 <p className="text-gray-600">{type.description}</p>
               </div>
@@ -110,7 +160,7 @@ const ADU = () => {
             Service Area
           </h2>
           <p className="text-xl max-w-3xl mx-auto text-gray-700 leading-relaxed">
-            HJZ Construction proudly serves homeowners within a 1-hour radius of Boston, 
+            <span className="text-coral font-semibold">HJZ Construction</span> proudly serves homeowners within a 1-hour radius of Boston, 
             including towns throughout Norfolk, Suffolk, Plymouth, and Middlesex counties.
           </p>
         </div>
