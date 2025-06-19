@@ -39,21 +39,25 @@ const Header = () => {
 
   const navigateToGuides = () => {
     navigate('/guides');
+    window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
   };
 
   const navigateToADU = () => {
     navigate('/adu');
+    window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
   };
 
   const navigateToInsurance = () => {
     navigate('/insurance');
+    window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
   };
 
   const navigateToModular = () => {
     navigate('/modular');
+    window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
   };
 

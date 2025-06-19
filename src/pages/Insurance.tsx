@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -128,7 +127,7 @@ We can have a comprehensive reconstruction plan tailored to your needs, ready wi
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-playfair text-4xl font-bold text-navy mb-4 hover:scale-105 transition-transform duration-500">
-              HJZ Experts of the Insurance Process
+              <span className="text-coral">HJZ</span> Experts of the Insurance Process
             </h2>
             <div className="h-1 w-24 bg-coral mx-auto rounded-full hover:w-32 transition-all duration-500"></div>
           </div>
