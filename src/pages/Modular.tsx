@@ -47,8 +47,66 @@ const Modular = () => {
         </div>
       </section>
 
-      {/* Why Choose Modular Section */}
+      {/* Featured Project Showcase */}
       <section className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-playfair text-4xl font-bold text-navy mb-4">
+              Featured <span className="text-coral">Modular</span> Projects
+            </h2>
+            <div className="h-1 w-24 bg-coral mx-auto rounded-full"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500">
+              <img 
+                src="/HJZ/lovable-uploads/dcc5338f-96b1-4662-ab74-1399dd66baa5.png" 
+                alt="Completed Modern Modular Home with Natural Wood and Contemporary Design" 
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+            <div className="space-y-6">
+              <h3 className="font-playfair text-3xl font-bold text-navy">Modern Luxury Living</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                This stunning modular home showcases the perfect blend of contemporary design and natural materials. 
+                Featuring extensive use of natural wood, large windows for abundant natural light, and seamless 
+                indoor-outdoor living spaces with beautiful landscaping.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Custom Design</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Natural Materials</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Energy Efficient</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 md:order-2">
+              <h3 className="font-playfair text-3xl font-bold text-navy">Construction Process</h3>
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Our modular construction process ensures precision and quality at every step. From factory-built 
+                modules to on-site assembly, we maintain strict quality control standards. This image shows the 
+                careful installation process during the construction phase.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Quality Control</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Professional Installation</span>
+                <span className="bg-coral/10 text-coral px-4 py-2 rounded-full text-sm font-medium">Weather Protected</span>
+              </div>
+            </div>
+            <div className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 md:order-1">
+              <img 
+                src="/HJZ/lovable-uploads/f0f4bbc3-928c-46f9-b7b8-93ca3f749952.png" 
+                alt="Modular Home Construction Process with Crane Installation" 
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Modular Section */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-playfair text-4xl font-bold text-navy mb-4">
@@ -59,7 +117,7 @@ const Modular = () => {
           
           <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
+              <div key={index} className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className="w-3 h-3 bg-coral rounded-full mt-2 flex-shrink-0"></div>
                 <p className="text-gray-700 text-lg leading-relaxed">{benefit}</p>
               </div>
