@@ -33,12 +33,21 @@ const ContactModal: React.FC<ContactModalProps> = ({
     setIsSubmitting(true);
 
     try {
+      // Create FormData object for proper Formspree submission
+      const form = new FormData();
+      form.append('name', formData.name);
+      form.append('email', formData.email);
+      form.append('phone', formData.phone);
+      form.append('projectType', formData.projectType);
+      form.append('budget', formData.budget);
+      form.append('details', formData.details);
+
       const response = await fetch('https://formspree.io/f/xdkzlkwq', {
         method: 'POST',
+        body: form,
         headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
+          'Accept': 'application/json'
+        }
       });
 
       if (response.ok) {
