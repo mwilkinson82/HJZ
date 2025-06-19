@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -37,14 +36,9 @@ const Header = () => {
             />
             <div className="flex flex-col">
               <span className={`font-playfair text-2xl font-bold transition-colors duration-300 ${
-                isScrolled ? 'text-navy' : 'text-white drop-shadow-lg'
+                isScrolled ? 'text-coral' : 'text-coral drop-shadow-lg'
               }`}>
                 HJZ Construction
-              </span>
-              <span className={`text-sm font-light transition-colors duration-300 ${
-                isScrolled ? 'text-gray-600' : 'text-white/90 drop-shadow-md'
-              }`}>
-                Inc.
               </span>
             </div>
           </div>
