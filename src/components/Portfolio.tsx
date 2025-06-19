@@ -6,16 +6,16 @@ const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   
   const projects = [
-    "/lovable-uploads/b78d37cb-af1c-448a-b894-d009288e9094.png",
-    "/lovable-uploads/1d488505-e6c3-4c7e-a611-c8e7512fdc83.png", 
-    "/lovable-uploads/91feba13-e2cc-4db2-a9ec-00666c8161c8.png",
-    "/lovable-uploads/df2bc432-bb84-42ff-a81b-74019da44bec.png",
-    "/lovable-uploads/2ef3245d-28ef-4a2e-88c2-a722d99a1381.png",
-    "/lovable-uploads/21fd4a4e-f031-4029-9dc5-c7839afc8b32.png",
-    "/lovable-uploads/2c421101-d6a9-48a9-8068-3c6cff9e7340.png",
-    "/lovable-uploads/2ec45492-974b-4f84-954d-1bf6d6ce566d.png",
-    "/lovable-uploads/21025a41-6a90-4047-b533-c1af8d850ecf.png",
-    "/lovable-uploads/aafb29c2-abf7-4529-8056-52b100904a3d.png"
+    "/HJZ/lovable-uploads/b78d37cb-af1c-448a-b894-d009288e9094.png",
+    "/HJZ/lovable-uploads/1d488505-e6c3-4c7e-a611-c8e7512fdc83.png", 
+    "/HJZ/lovable-uploads/91feba13-e2cc-4db2-a9ec-00666c8161c8.png",
+    "/HJZ/lovable-uploads/df2bc432-bb84-42ff-a81b-74019da44bec.png",
+    "/HJZ/lovable-uploads/2ef3245d-28ef-4a2e-88c2-a722d99a1381.png",
+    "/HJZ/lovable-uploads/21fd4a4e-f031-4029-9dc5-c7839afc8b32.png",
+    "/HJZ/lovable-uploads/2c421101-d6a9-48a9-8068-3c6cff9e7340.png",
+    "/HJZ/lovable-uploads/2ec45492-974b-4f84-954d-1bf6d6ce566d.png",
+    "/HJZ/lovable-uploads/21025a41-6a90-4047-b533-c1af8d850ecf.png",
+    "/HJZ/lovable-uploads/aafb29c2-abf7-4529-8056-52b100904a3d.png"
   ];
 
   const openModal = () => {
