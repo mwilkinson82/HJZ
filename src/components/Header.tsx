@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,15 +17,27 @@ const Header = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
+    // If we're not on the home page, navigate there first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setIsMobileMenuOpen(false);
   };
 
   const navigateToGuides = () => {
-    window.location.href = '/HJZ/guides';
+    navigate('/guides');
     setIsMobileMenuOpen(false);
   };
 
@@ -33,7 +48,7 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-24">
           {/* Logo with Text */}
-          <div className="group cursor-pointer flex items-center space-x-3" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <div className="group cursor-pointer flex items-center space-x-3" onClick={() => navigate('/')}>
             <img 
               src="/HJZ/lovable-uploads/a137f41e-2944-4ea7-94de-bcbb26cae258.png" 
               alt="HJZ Construction Logo" 
@@ -56,7 +71,7 @@ const Header = () => {
                 isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'
               }`}
             >
-              <span>Meet Hayley</span>
+              <span>Meet the Team</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-coral transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button 
@@ -132,7 +147,7 @@ const Header = () => {
                 onClick={() => scrollToSection('about')}
                 className="text-left text-gray-700 hover:text-coral transition-colors font-medium px-6 py-3 rounded-lg hover:bg-coral/5"
               >
-                Meet Hayley
+                Meet the Team
               </button>
               <button 
                 onClick={() => scrollToSection('services')}
