@@ -28,18 +28,13 @@ const Header = () => {
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-24">
-          {/* Logo with Personality */}
-          <div className="group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className={`font-playfair text-4xl md:text-5xl font-bold group-hover:text-coral transition-colors duration-300 ${
-              isScrolled ? 'text-navy' : 'text-white drop-shadow-lg'
-            }`}>
-              HJZ Management
-            </div>
-            <div className={`text-sm font-medium tracking-wider uppercase opacity-90 mt-1 ${
-              isScrolled ? 'text-coral' : 'text-coral-200 drop-shadow-md'
-            }`}>
-              New England Custom Homes
-            </div>
+          {/* Logo */}
+          <div className="group cursor-pointer flex items-center space-x-4" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <img 
+              src="/lovable-uploads/92d1bb29-9817-4f2c-bf06-9516ae063485.png" 
+              alt="HJZ Construction Inc" 
+              className="h-16 w-auto"
+            />
           </div>
           
           {/* Desktop Navigation */}
@@ -59,7 +54,7 @@ const Header = () => {
                 isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'
               }`}
             >
-              <span>Our Artistry</span>
+              <span>Our Services</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-coral transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button 
@@ -77,7 +72,7 @@ const Header = () => {
                 isScrolled ? 'text-gray-700' : 'text-white drop-shadow-md'
               }`}
             >
-              <span>Love Letters</span>
+              <span>Reviews</span>
               <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-coral transition-all duration-300 group-hover:w-full"></div>
             </button>
           </nav>
@@ -87,7 +82,7 @@ const Header = () => {
             onClick={() => scrollToSection('contact')}
             className="hidden lg:inline-flex bg-coral hover:bg-coral-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-coral/25 transition-all duration-500 hover:scale-105 btn-premium"
           >
-            Begin Your Legacy
+            Get Started
           </Button>
           
           {/* Mobile Menu Button */}
@@ -123,7 +118,7 @@ const Header = () => {
                 onClick={() => scrollToSection('services')}
                 className="text-left text-gray-700 hover:text-coral transition-colors font-medium px-6 py-3 rounded-lg hover:bg-coral/5"
               >
-                Our Artistry
+                Our Services
               </button>
               <button 
                 onClick={() => scrollToSection('portfolio')}
@@ -135,13 +130,13 @@ const Header = () => {
                 onClick={() => scrollToSection('testimonials')}
                 className="text-left text-gray-700 hover:text-coral transition-colors font-medium px-6 py-3 rounded-lg hover:bg-coral/5"
               >
-                Love Letters
+                Reviews
               </button>
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="mx-6 bg-coral hover:bg-coral-600 text-white font-semibold rounded-full shadow-lg btn-premium"
               >
-                Begin Your Legacy
+                Get Started
               </Button>
             </nav>
           </div>
