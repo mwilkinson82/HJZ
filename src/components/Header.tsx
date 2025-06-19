@@ -23,12 +23,14 @@ const Header = () => {
       navigate('/');
       // Wait for navigation to complete, then scroll
       setTimeout(() => {
+        window.scrollTo(0, 0);
         const element = document.getElementById(sectionId);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
       }, 100);
     } else {
+      window.scrollTo(0, 0);
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });

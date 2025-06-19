@@ -1,10 +1,14 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ContactModal from '@/components/ContactModal';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const Guides = () => {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -12,12 +16,8 @@ const Guides = () => {
     }
   };
 
-  const scrollToContact = () => {
-    // Scroll to the footer contact section or contact form
-    const footer = document.querySelector('footer');
-    if (footer) {
-      footer.scrollIntoView({ behavior: 'smooth' });
-    }
+  const openContactModal = () => {
+    setIsContactModalOpen(true);
   };
 
   return (
@@ -264,7 +264,7 @@ const Guides = () => {
                   We'll explain our process and get you moving towards maximizing your investment.
                 </p>
                 <Button 
-                  onClick={scrollToContact}
+                  onClick={openContactModal}
                   className="bg-white text-coral hover:bg-gray-100 px-6 sm:px-8 py-3 rounded-full shadow-lg"
                 >
                   Schedule Your Call
@@ -487,7 +487,7 @@ const Guides = () => {
                     Contact us for a complimentary consultation and learn how our pre-construction services can save you time, money, and stress.
                   </p>
                   <Button 
-                    onClick={scrollToContact}
+                    onClick={openContactModal}
                     className="bg-coral hover:bg-coral-600 text-white px-6 sm:px-8 py-3 rounded-full shadow-lg"
                   >
                     Schedule Your Consultation
@@ -500,6 +500,13 @@ const Guides = () => {
       </section>
 
       <Footer />
+      
+      <ContactModal 
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+        title="Schedule Your Consultation"
+        description="Share your project details and we'll get back to you within 24 hours."
+      />
     </div>
   );
 };
