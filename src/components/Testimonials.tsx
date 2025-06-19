@@ -91,48 +91,48 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-96 h-96 bg-coral/5 rounded-full blur-3xl animate-pulse"></div>
-      <div className="container mx-auto px-6 relative">
-        <div className="text-center mb-16 section-animate">
-          <h2 className="font-playfair text-5xl font-bold text-navy mb-6">
+    <section id="testimonials" className="py-16 sm:py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-48 sm:w-64 lg:w-96 h-48 sm:h-64 lg:h-96 bg-coral/5 rounded-full blur-3xl animate-pulse"></div>
+      <div className="container mx-auto px-4 sm:px-6 relative">
+        <div className="text-center mb-12 sm:mb-16 section-animate">
+          <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4 sm:mb-6">
             What Our <span className="text-coral">Clients</span> Say
           </h2>
-          <div className="h-1 w-24 bg-coral mx-auto mb-6 rounded-full"></div>
+          <div className="h-1 w-16 sm:w-24 bg-coral mx-auto mb-4 sm:mb-6 rounded-full"></div>
           
           {/* Enhanced Google Rating Display with Badge */}
-          <div className="flex items-center justify-center mb-8">
-            <div className="bg-white rounded-xl shadow-xl p-8 flex items-center space-x-6 border border-gray-100">
+          <div className="flex items-center justify-center mb-6 sm:mb-8">
+            <div className="bg-white rounded-xl shadow-xl p-4 sm:p-6 lg:p-8 flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6 border border-gray-100">
               {/* Google Logo and Badge */}
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-red-500 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                <div className="w-10 sm:w-12 h-10 sm:h-12 bg-gradient-to-r from-blue-500 to-red-500 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg">
                   G
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-navy mb-1">5.0</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-navy mb-1">5.0</div>
                   <div className="flex space-x-1 mb-2">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className="w-4 sm:w-5 lg:w-6 h-4 sm:h-5 lg:h-6 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <div className="text-sm font-medium text-gray-700">Google Reviews</div>
+                  <div className="text-xs sm:text-sm font-medium text-gray-700">Google Reviews</div>
                 </div>
               </div>
               
-              <div className="h-16 w-px bg-gray-200"></div>
+              <div className="h-px w-16 sm:h-16 sm:w-px bg-gray-200"></div>
               
               <div className="text-center">
-                <div className="flex items-center space-x-2 mb-2">
-                  <Users className="w-5 h-5 text-coral" />
-                  <span className="text-lg font-semibold text-navy">10 Happy Clients</span>
+                <div className="flex items-center justify-center space-x-2 mb-2">
+                  <Users className="w-4 sm:w-5 h-4 sm:h-5 text-coral" />
+                  <span className="text-base sm:text-lg font-semibold text-navy">10 Happy Clients</span>
                 </div>
                 <Button 
                   variant="outline" 
                   size="sm" 
                   onClick={handleReviewClick}
-                  className="text-coral border-coral hover:bg-coral hover:text-white transition-all duration-300"
+                  className="text-coral border-coral hover:bg-coral hover:text-white transition-all duration-300 text-sm"
                 >
-                  View All Reviews <ExternalLink className="w-4 h-4 ml-1" />
+                  View All Reviews <ExternalLink className="w-3 sm:w-4 h-3 sm:h-4 ml-1" />
                 </Button>
               </div>
             </div>
@@ -140,43 +140,43 @@ const Testimonials = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-white rounded-2xl shadow-xl p-8 md:p-12 section-animate">
-            <div className="absolute top-6 left-6 text-6xl text-coral/20 font-playfair">"</div>
+          <div className="relative bg-white rounded-2xl shadow-xl p-6 sm:p-8 lg:p-12 section-animate">
+            <div className="absolute top-4 sm:top-6 left-4 sm:left-6 text-4xl sm:text-6xl text-coral/20 font-playfair">"</div>
             
             <div className="relative z-10">
               {/* Profile Initials and Rating */}
-              <div className="flex flex-col items-center mb-6">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-coral to-coral/80 flex items-center justify-center text-white text-2xl font-bold mb-4 shadow-lg">
+              <div className="flex flex-col items-center mb-4 sm:mb-6">
+                <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-full bg-gradient-to-br from-coral to-coral/80 flex items-center justify-center text-white text-lg sm:text-2xl font-bold mb-3 sm:mb-4 shadow-lg">
                   {googleReviews[currentTestimonial].initials}
                 </div>
                 <div className="flex space-x-1">
                   {[...Array(googleReviews[currentTestimonial].rating)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="w-5 sm:w-6 h-5 sm:h-6 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
               </div>
               
-              <p className="text-xl text-gray-700 leading-relaxed mb-8 text-center italic">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-700 leading-relaxed mb-6 sm:mb-8 text-center italic px-2">
                 {googleReviews[currentTestimonial].text}
               </p>
               
               <div className="text-center">
-                <h4 className="font-playfair text-2xl font-bold text-navy mb-1">
+                <h4 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold text-navy mb-1">
                   {googleReviews[currentTestimonial].name}
                 </h4>
-                <p className="text-coral font-medium">{googleReviews[currentTestimonial].date}</p>
-                <div className="mt-2 text-sm text-gray-500">Verified Google Customer</div>
+                <p className="text-coral font-medium text-sm sm:text-base">{googleReviews[currentTestimonial].date}</p>
+                <div className="mt-2 text-xs sm:text-sm text-gray-500">Verified Google Customer</div>
               </div>
             </div>
           </div>
 
           {/* Navigation dots */}
-          <div className="flex justify-center mt-8 space-x-3">
+          <div className="flex justify-center mt-6 sm:mt-8 space-x-2 sm:space-x-3">
             {googleReviews.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`w-2.5 sm:w-3 h-2.5 sm:h-3 rounded-full transition-all duration-300 ${
                   index === currentTestimonial ? 'bg-coral scale-125' : 'bg-gray-300 hover:bg-gray-400'
                 }`}
               />
@@ -185,36 +185,36 @@ const Testimonials = () => {
         </div>
 
         {/* Leave a Review Call-to-Action */}
-        <div className="text-center mt-16 section-animate">
-          <div className="bg-gradient-to-r from-navy/5 to-coral/5 rounded-2xl p-10 max-w-3xl mx-auto border border-gray-100 shadow-lg">
-            <div className="mb-6">
-              <div className="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-md mb-4">
-                <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                <span className="font-semibold text-gray-700">5-Star Experience?</span>
+        <div className="text-center mt-12 sm:mt-16 section-animate">
+          <div className="bg-gradient-to-r from-navy/5 to-coral/5 rounded-2xl p-6 sm:p-8 lg:p-10 max-w-3xl mx-auto border border-gray-100 shadow-lg">
+            <div className="mb-4 sm:mb-6">
+              <div className="inline-flex items-center space-x-2 bg-white px-3 sm:px-4 py-2 rounded-full shadow-md mb-3 sm:mb-4">
+                <Star className="w-4 sm:w-5 h-4 sm:h-5 fill-yellow-400 text-yellow-400" />
+                <span className="font-semibold text-gray-700 text-sm sm:text-base">5-Star Experience?</span>
               </div>
             </div>
             
-            <h3 className="font-playfair text-3xl font-bold text-navy mb-4">
+            <h3 className="font-playfair text-2xl sm:text-3xl font-bold text-navy mb-3 sm:mb-4">
               Share Your <span className="text-coral">HJZ Experience</span>
             </h3>
-            <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+            <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed px-2">
               Help others discover the HJZ Construction difference! Your honest review helps our local community 
               find trusted construction professionals and helps us continue delivering exceptional service.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <Button 
                 onClick={handleReviewClick}
-                className="bg-coral hover:bg-coral/90 text-white font-semibold px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center space-x-2"
+                className="bg-coral hover:bg-coral/90 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base lg:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center space-x-2 w-full sm:w-auto"
               >
-                <Star className="w-5 h-5 fill-white" />
+                <Star className="w-4 sm:w-5 h-4 sm:h-5 fill-white" />
                 <span>Leave a 5-Star Review</span>
-                <ExternalLink className="w-5 h-5" />
+                <ExternalLink className="w-4 sm:w-5 h-4 sm:h-5" />
               </Button>
               
-              <div className="text-sm text-gray-500 flex items-center space-x-1">
+              <div className="text-xs sm:text-sm text-gray-500 flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-1">
                 <span>Takes less than 2 minutes</span>
-                <span>•</span>
+                <span className="hidden sm:inline">•</span>
                 <span>Helps local families</span>
               </div>
             </div>

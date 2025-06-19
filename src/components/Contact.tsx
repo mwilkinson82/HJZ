@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -29,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 relative overflow-hidden">
+    <section id="contact" className="py-16 sm:py-20 relative overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -39,54 +40,54 @@ const Contact = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-navy/70 via-navy/60 to-gold/10"></div>
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16 section-animate">
-            <h2 className="font-playfair text-5xl font-bold text-white mb-6">
+          <div className="text-center mb-12 sm:mb-16 section-animate">
+            <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
               Let's Create Your <span className="text-coral">Legacy</span>
             </h2>
-            <div className="h-1 w-24 bg-gold mx-auto mb-6 rounded-full"></div>
-            <p className="text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            <div className="h-1 w-16 sm:w-24 bg-gold mx-auto mb-4 sm:mb-6 rounded-full"></div>
+            <p className="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed px-4">
               Every extraordinary home begins with an extraordinary conversation. Share your vision, and let's explore how we can bring your dreams to life.
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-1 section-animate">
+          <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="lg:col-span-1 section-animate order-2 lg:order-1">
               <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
                 <CardHeader className="text-center">
-                  <CardTitle className="font-playfair text-2xl text-navy">Connect with Hayley</CardTitle>
+                  <CardTitle className="font-playfair text-xl sm:text-2xl text-navy">Connect with Hayley</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-6">
+                <CardContent className="space-y-4 sm:space-y-6">
                   <div className="text-center">
-                    <div className="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden border-2 border-gold">
+                    <div className="w-16 sm:w-20 h-16 sm:h-20 rounded-full mx-auto mb-3 overflow-hidden border-2 border-gold">
                       <img 
                         src="/HJZ/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png"
                         alt="Hayley Zeoli"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h3 className="font-semibold text-navy text-lg">Hayley Zeoli</h3>
+                    <h3 className="font-semibold text-navy text-base sm:text-lg">Hayley Zeoli</h3>
                     <p className="text-gray-600 text-sm">Founder & Master Builder</p>
                   </div>
                   
                   <div className="space-y-3 text-center">
                     <div>
-                      <div className="font-medium text-navy">Direct Line</div>
-                      <div className="text-gray-600">(617) 555-0123</div>
+                      <div className="font-medium text-navy text-sm sm:text-base">Direct Line</div>
+                      <div className="text-gray-600 text-sm sm:text-base">(617) 680-6716</div>
                     </div>
                     <div>
-                      <div className="font-medium text-navy">Email</div>
-                      <div className="text-gray-600">hayley@hjzmanagement.com</div>
+                      <div className="font-medium text-navy text-sm sm:text-base">Email</div>
+                      <div className="text-gray-600 text-sm">info.hjzmgmt@gmail.com</div>
                     </div>
                     <div>
-                      <div className="font-medium text-navy">Service Area</div>
-                      <div className="text-gray-600">Greater Boston & MetroWest</div>
+                      <div className="font-medium text-navy text-sm sm:text-base">Service Area</div>
+                      <div className="text-gray-600 text-sm">Greater Boston & MetroWest</div>
                     </div>
                   </div>
                   
                   <div className="bg-gold/10 p-3 rounded-lg text-center">
-                    <p className="text-sm text-navy font-light italic">
+                    <p className="text-xs sm:text-sm text-navy font-light italic">
                       "I personally review every inquiry and respond within 24 hours."
                     </p>
                   </div>
@@ -94,11 +95,11 @@ const Contact = () => {
               </Card>
             </div>
             
-            <div className="lg:col-span-2 section-animate">
+            <div className="lg:col-span-2 section-animate order-1 lg:order-2">
               <Card className="bg-white/95 backdrop-blur border-0 shadow-2xl">
                 <CardHeader className="text-center">
-                  <CardTitle className="font-playfair text-3xl text-navy">Start Your Journey</CardTitle>
-                  <p className="text-gray-600">Tell us about your vision—every detail matters.</p>
+                  <CardTitle className="font-playfair text-2xl sm:text-3xl text-navy">Start Your Journey</CardTitle>
+                  <p className="text-gray-600 text-sm sm:text-base">Tell us about your vision—every detail matters.</p>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-4">
@@ -159,7 +160,7 @@ const Contact = () => {
                           value={formData.projectType}
                           onChange={handleChange}
                           required
-                          className="w-full border border-gray-300 rounded-md px-3 py-2"
+                          className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm sm:text-base"
                         >
                           <option value="">Select project type</option>
                           <option value="new-construction">New Custom Home</option>
@@ -179,7 +180,7 @@ const Contact = () => {
                         name="budget"
                         value={formData.budget}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded-md px-3 py-2"
+                        className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm sm:text-base"
                       >
                         <option value="">Select investment range</option>
                         <option value="1-2m">$1M - $2M</option>
@@ -201,7 +202,7 @@ const Contact = () => {
                         onChange={handleChange}
                         required
                         rows={4}
-                        className="w-full"
+                        className="w-full text-sm sm:text-base"
                         placeholder="Describe your dream home, timeline, must-haves, and any specific requirements..."
                       />
                     </div>
@@ -209,7 +210,7 @@ const Contact = () => {
                     <Button 
                       type="submit"
                       size="lg"
-                      className="w-full bg-coral hover:bg-coral/90 text-white font-semibold py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                      className="w-full bg-coral hover:bg-coral/90 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                     >
                       Begin Our Conversation
                     </Button>

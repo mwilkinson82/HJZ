@@ -31,7 +31,6 @@ const Portfolio = () => {
   ];
 
   const openModal = () => {
-    // For now, we'll create a simple modal. This can be enhanced later.
     setSelectedImage("modal");
   };
 
@@ -40,25 +39,25 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="py-20 bg-white relative overflow-hidden">
-      <div className="container mx-auto px-6 relative">
-        <div className="text-center mb-16 section-animate">
-          <h2 className="font-playfair text-5xl font-bold text-navy mb-6">
+    <section id="portfolio" className="py-16 sm:py-20 bg-white relative overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 relative">
+        <div className="text-center mb-12 sm:mb-16 section-animate">
+          <h2 className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4 sm:mb-6">
             Our <span className="text-coral">Portfolio</span>
           </h2>
-          <div className="h-1 w-24 bg-coral mx-auto mb-6 rounded-full"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <div className="h-1 w-16 sm:w-24 bg-coral mx-auto mb-4 sm:mb-6 rounded-full"></div>
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Each project represents our commitment to excellence. From custom homes to renovations, 
             insurance claims to ADUs—see the craftsmanship that defines HJZ Construction.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
           {projects.slice(0, 9).map((image, index) => (
             <div 
               key={index}
               className={`section-animate relative group cursor-pointer ${
-                index % 3 === 1 ? 'md:mt-8' : index % 3 === 2 ? 'md:mt-4' : ''
+                index % 3 === 1 ? 'lg:mt-8' : index % 3 === 2 ? 'lg:mt-4' : ''
               }`}
               style={{animationDelay: `${index * 0.1}s`}}
               onClick={() => setSelectedImage(image)}
@@ -67,7 +66,7 @@ const Portfolio = () => {
                 <img 
                   src={image}
                   alt={`HJZ Construction Project ${index + 1}`}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-48 sm:h-56 lg:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -76,11 +75,11 @@ const Portfolio = () => {
         </div>
         
         {/* Last row with 2 centered images */}
-        <div className="flex justify-center gap-8 mb-12">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-8 sm:mb-12">
           {projects.slice(9, 11).map((image, index) => (
             <div 
               key={index + 9}
-              className="section-animate relative group cursor-pointer w-full max-w-sm"
+              className="section-animate relative group cursor-pointer w-full max-w-sm mx-auto"
               style={{animationDelay: `${(index + 9) * 0.1}s`}}
               onClick={() => setSelectedImage(image)}
             >
@@ -88,7 +87,7 @@ const Portfolio = () => {
                 <img 
                   src={image}
                   alt={`HJZ Construction Project ${index + 10}`}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-48 sm:h-56 lg:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
@@ -97,17 +96,17 @@ const Portfolio = () => {
         </div>
         
         <div className="text-center section-animate">
-          <div className="inline-block bg-gradient-to-r from-coral/5 to-navy/5 p-8 rounded-2xl mb-6">
-            <p className="text-navy text-lg font-light mb-4 max-w-2xl">
+          <div className="inline-block bg-gradient-to-r from-coral/5 to-navy/5 p-6 sm:p-8 rounded-2xl mb-6">
+            <p className="text-navy text-base sm:text-lg font-light mb-4 max-w-2xl px-4">
               These projects represent more than construction—they're the foundation of family stories.
             </p>
-            <div className="text-coral font-semibold text-lg italic font-playfair mb-6">
+            <div className="text-coral font-semibold text-lg font-playfair mb-6">
               "Ready to see your vision become reality?"
             </div>
             <Button 
               size="lg"
               onClick={openModal}
-              className="bg-navy hover:bg-navy/90 text-white font-semibold px-10 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="bg-navy hover:bg-navy/90 text-white font-semibold px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               View Full Portfolio
             </Button>
@@ -129,7 +128,7 @@ const Portfolio = () => {
             />
             <button 
               onClick={closeModal}
-              className="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/70 transition-colors"
+              className="absolute top-2 sm:top-4 right-2 sm:right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/70 transition-colors text-lg sm:text-xl"
             >
               ✕
             </button>
@@ -144,25 +143,25 @@ const Portfolio = () => {
           onClick={closeModal}
         >
           <div className="relative max-w-6xl max-h-[90vh] w-full bg-white rounded-lg overflow-hidden">
-            <div className="p-6">
-              <div className="flex justify-between items-center mb-6">
-                <h3 className="text-2xl font-playfair font-bold text-navy">
+            <div className="p-4 sm:p-6">
+              <div className="flex justify-between items-center mb-4 sm:mb-6">
+                <h3 className="text-xl sm:text-2xl font-playfair font-bold text-navy">
                   <span className="text-coral">HJZ</span> Portfolio
                 </h3>
                 <button 
                   onClick={closeModal}
-                  className="text-gray-400 hover:text-gray-600 text-2xl"
+                  className="text-gray-400 hover:text-gray-600 text-xl sm:text-2xl"
                 >
                   ✕
                 </button>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-h-[60vh] overflow-y-auto">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 max-h-[60vh] overflow-y-auto">
                 {projects.map((image, index) => (
                   <div key={index} className="relative group cursor-pointer">
                     <img 
                       src={image}
                       alt={`Portfolio Item ${index + 1}`}
-                      className="w-full h-48 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+                      className="w-full h-32 sm:h-40 lg:h-48 object-cover rounded-lg hover:scale-105 transition-transform duration-300"
                       onClick={() => setSelectedImage(image)}
                     />
                   </div>

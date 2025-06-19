@@ -40,7 +40,7 @@ const Hero = () => {
               <div className="h-1 w-20 sm:w-32 bg-coral mx-auto mb-6 sm:mb-8 rounded-full animate-pulse shadow-lg"></div>
             </div>
             
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-4 sm:mb-6 font-light animate-fade-in-up leading-relaxed text-white drop-shadow-xl" style={{animationDelay: '0.3s'}}>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-4 sm:mb-6 font-light animate-fade-in-up leading-relaxed text-white drop-shadow-xl px-2" style={{animationDelay: '0.3s'}}>
               <span className="text-coral-300 font-medium drop-shadow-lg">Crafting Legacy Homes.</span> Building Your Forever.
             </p>
             
@@ -49,11 +49,11 @@ const Hero = () => {
               that honor New England tradition while embracing your family's unique vision.
             </p>
             
-            <div className="flex flex-col gap-4 sm:gap-6 justify-center items-center animate-fade-in-up px-2" style={{animationDelay: '0.7s'}}>
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center animate-fade-in-up px-2" style={{animationDelay: '0.7s'}}>
               <Button 
                 onClick={() => scrollToSection('contact')}
                 size="lg"
-                className="group bg-coral hover:bg-coral-600 text-white font-semibold px-8 sm:px-12 py-4 sm:py-6 text-base sm:text-lg rounded-full shadow-2xl hover:shadow-coral/25 transition-all duration-500 hover:scale-105 w-full sm:w-auto"
+                className="group bg-coral hover:bg-coral-600 text-white font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-lg rounded-full shadow-2xl hover:shadow-coral/25 transition-all duration-500 hover:scale-105 w-full sm:w-auto"
               >
                 <span className="group-hover:scale-110 transition-transform duration-300">Start Building Your Dream</span>
               </Button>
@@ -61,7 +61,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('about')}
                 variant="outline" 
                 size="lg"
-                className="border-2 border-white/80 text-white hover:bg-white hover:text-navy px-8 sm:px-12 py-4 sm:py-6 text-base sm:text-lg rounded-full backdrop-blur-sm bg-white/10 transition-all duration-500 hover:scale-105 w-full sm:w-auto"
+                className="border-2 border-white/80 text-white hover:bg-white hover:text-navy px-6 sm:px-8 md:px-12 py-3 sm:py-4 md:py-6 text-sm sm:text-base md:text-lg rounded-full backdrop-blur-sm bg-white/10 transition-all duration-500 hover:scale-105 w-full sm:w-auto"
               >
                 Discover Our Process
               </Button>
@@ -71,7 +71,7 @@ const Hero = () => {
       </div>
       
       {/* Simple Centered Scroll Indicator - Outside the card, properly positioned */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 text-center">
         <div className="text-white/70 text-xs font-light mb-2 tracking-wider">SCROLL TO EXPLORE</div>
         <div className="w-6 h-10 border-2 border-white/60 rounded-full mx-auto flex justify-center animate-bounce">
           <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
