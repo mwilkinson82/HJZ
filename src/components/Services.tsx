@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
@@ -11,7 +10,7 @@ const Services = () => {
       title: "Accessory Dwelling Units",
       subtitle: "Build Smart. Live Free.",
       description: "From detached cottages to garage conversions, we deliver turnkey ADU solutions designed for your goals and your lot. Navigate Massachusetts zoning laws with confidence.",
-      image: "/HJZ/lovable-uploads/1d488505-e6c3-4c7e-a611-c8e7512fdc83.png",
+      image: "/HJZ/lovable-uploads/29347f05-ef4e-496c-b73d-dfe9c1c72011.png",
       highlight: "Design-Build Experts",
       link: "/adu"
     },
