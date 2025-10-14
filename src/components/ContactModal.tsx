@@ -161,6 +161,8 @@ const ContactModal: React.FC<ContactModalProps> = ({
               className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm sm:text-base"
             >
               <option value="">Select investment range</option>
+              <option value="100k-500k">$100K - $500K</option>
+              <option value="500k-1m">$500K - $1M</option>
               <option value="1-2m">$1M - $2M</option>
               <option value="2-4m">$2M - $4M</option>
               <option value="4-6m">$4M - $6M</option>
