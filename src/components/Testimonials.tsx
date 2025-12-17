@@ -124,7 +124,7 @@ const Testimonials = () => {
               <div className="text-center">
                 <div className="flex items-center justify-center space-x-2 mb-2">
                   <Users className="w-4 sm:w-5 h-4 sm:h-5 text-coral" />
-                  <span className="text-base sm:text-lg font-semibold text-navy">10 Happy Clients</span>
+                  <span className="text-base sm:text-lg font-semibold text-navy">18 Happy Clients</span>
                 </div>
                 <Button 
                   variant="outline" 
