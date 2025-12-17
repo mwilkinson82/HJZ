@@ -1,9 +1,7 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
-
 const About = () => {
-  return (
-    <section id="about" className="py-16 sm:py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+  return <section id="about" className="py-16 sm:py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-48 sm:w-64 lg:w-96 h-48 sm:h-64 lg:h-96 bg-coral/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-32 sm:w-48 lg:w-64 h-32 sm:h-48 lg:h-64 bg-navy/5 rounded-full blur-2xl"></div>
@@ -15,11 +13,7 @@ const About = () => {
             <div className="relative group">
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img 
-                  src="/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png"
-                  alt="Hayley Zeoli - Founder & Master Builder"
-                  className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+                <img src="/lovable-uploads/7c13fd02-73be-4e92-829e-196ff31f429a.png" alt="Hayley Zeoli - Founder & Master Builder" className="w-full h-[400px] sm:h-[500px] lg:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent"></div>
               </div>
               
@@ -45,22 +39,19 @@ const About = () => {
           <div className="section-animate space-y-6 sm:space-y-8 order-1 lg:order-2">
             <div>
               <h2 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-4 leading-tight">
-                <span className="font-mono text-sm sm:text-base lg:text-2xl tracking-[0.2em] sm:tracking-[0.3em] transform inline-block text-gray-400 uppercase relative border-2 border-dashed border-gray-300 px-2 sm:px-4 py-1 sm:py-2 bg-blue-50/30" 
-                      style={{ 
-                        fontFamily: 'Courier New, monospace',
-                        letterSpacing: '0.15em',
-                        transform: 'rotate(-1deg)',
-                        textShadow: '1px 1px 0px rgba(0,0,0,0.1)'
-                      }}>
+                <span className="font-mono text-sm sm:text-base lg:text-2xl tracking-[0.2em] sm:tracking-[0.3em] transform inline-block text-gray-400 uppercase relative border-2 border-dashed border-gray-300 px-2 sm:px-4 py-1 sm:py-2 bg-blue-50/30" style={{
+                fontFamily: 'Courier New, monospace',
+                letterSpacing: '0.15em',
+                transform: 'rotate(-1deg)',
+                textShadow: '1px 1px 0px rgba(0,0,0,0.1)'
+              }}>
                   Meet
                   <div className="absolute -bottom-1 -right-1 w-2 h-2 border border-gray-400 bg-white"></div>
                   <div className="absolute -top-1 -left-1 w-2 h-2 border border-gray-400 bg-white"></div>
                 </span>
                 <span className="text-gradient-coral block">Hayley Zeoli</span>
               </h2>
-              <div className="text-coral text-lg sm:text-xl font-medium mb-4 sm:mb-6 font-playfair">
-                Master Designer & Builder, CEO
-              </div>
+              <div className="text-coral text-lg sm:text-xl font-medium mb-4 sm:mb-6 font-playfair">Professional Building Contractor, CEO</div>
               <div className="h-1 w-16 sm:w-24 bg-coral rounded-full mb-6 sm:mb-8"></div>
             </div>
             
@@ -109,8 +100,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
